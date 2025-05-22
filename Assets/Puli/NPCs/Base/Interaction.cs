@@ -8,19 +8,19 @@ public class Interaction : MonoBehaviour
 {
     [SerializeField] GameObject dialoguePanel;
     [SerializeField] TMP_Text dialogueText;
-    [SerializeField] string[] dialogue;
+    [SerializeField] TMP_Text npcNameText;
+    [SerializeField] protected string[] dialogue;
     int index;
     [SerializeField] float textSpeed;
     bool isPlayerClose = false;
     [SerializeField] float nextTextSpeed;
-
-
-
-
-
+    [SerializeField] Sprite chrImage;
+    [SerializeField] UnityEngine.UI.Image image;
     void ClearText()
     {
+        image.sprite = null;
         dialogueText.text = "";
+        npcNameText.text = "";
         index = 0;
         dialoguePanel.SetActive(false);
     }
@@ -62,6 +62,8 @@ public class Interaction : MonoBehaviour
             else
             {
                 dialoguePanel.SetActive(true);
+                image.sprite = chrImage;
+                npcNameText.text = gameObject.name;
                 StartCoroutine(Typing());
             }
         }
