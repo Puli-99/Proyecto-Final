@@ -1,14 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CameraFollowPlayer : MonoBehaviour
 {
-    public GameObject player;
+    [SerializeField] GameObject player;
     [SerializeField] Vector3 offset = new Vector3(x: 0, y: 6, z: -8);
+    [SerializeField] float delayFollowSpeed;
 
-    private void Update()
+
+    void LateUpdate()
     {
-        this.transform.position = player.transform.position + offset;
+        transform.position = Vector3.Lerp(transform.position, player.transform.position + offset, delayFollowSpeed * Time.deltaTime);       
     }
 }
