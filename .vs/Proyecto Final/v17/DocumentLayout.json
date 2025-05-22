@@ -7,14 +7,8 @@
       "RelativeMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|solutionrelative:assets\\puli\\npcs\\base\\interaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Users\\Puli\\Documents\\Proyectos Unity\\Universe Conqueror\\Assets\\Scripts\\PilotExpression.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|d:\\users\\puli\\documents\\proyectos unity\\proyecto final\\assets\\puli\\npcs\\ariel (misionesprincipales)\\arieldialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|solutionrelative:assets\\puli\\npcs\\ariel (misionesprincipales)\\arieldialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Users\\Puli\\Documents\\Proyectos Unity\\UTN 1st\\Assets\\Motores\\Enemy\\Base\\ZombieBase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|d:\\users\\puli\\documents\\proyectos unity\\proyecto final\\assets\\puli\\npcs\\julio (misiones_mejoras)\\julioscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|solutionrelative:assets\\puli\\npcs\\julio (misiones_mejoras)\\julioscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,21 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PilotExpression.cs",
-              "DocumentMoniker": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Universe Conqueror\\Assets\\Scripts\\PilotExpression.cs",
-              "RelativeDocumentMoniker": "..\\Universe Conqueror\\Assets\\Scripts\\PilotExpression.cs",
-              "ToolTip": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Universe Conqueror\\Assets\\Scripts\\PilotExpression.cs",
-              "RelativeToolTip": "..\\Universe Conqueror\\Assets\\Scripts\\PilotExpression.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T19:15:10.658Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -47,35 +28,22 @@
               "RelativeDocumentMoniker": "Assets\\Puli\\NPCs\\Base\\Interaction.cs",
               "ToolTip": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\NPCs\\Base\\Interaction.cs",
               "RelativeToolTip": "Assets\\Puli\\NPCs\\Base\\Interaction.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAmwBUAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAIwGgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T18:16:03.877Z",
+              "WhenOpened": "2025-05-22T20:18:57.907Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ArielDialogue.cs",
-              "DocumentMoniker": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\NPCs\\Ariel (MisionesPrincipales)\\ArielDialogue.cs",
-              "RelativeDocumentMoniker": "Assets\\Puli\\NPCs\\Ariel (MisionesPrincipales)\\ArielDialogue.cs",
-              "ToolTip": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\NPCs\\Ariel (MisionesPrincipales)\\ArielDialogue.cs",
-              "RelativeToolTip": "Assets\\Puli\\NPCs\\Ariel (MisionesPrincipales)\\ArielDialogue.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "JulioScript.cs",
+              "DocumentMoniker": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\NPCs\\Julio (Misiones_Mejoras)\\JulioScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Puli\\NPCs\\Julio (Misiones_Mejoras)\\JulioScript.cs",
+              "ToolTip": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\NPCs\\Julio (Misiones_Mejoras)\\JulioScript.cs",
+              "RelativeToolTip": "Assets\\Puli\\NPCs\\Julio (Misiones_Mejoras)\\JulioScript.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T18:12:06.696Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ZombieBase.cs",
-              "DocumentMoniker": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\UTN 1st\\Assets\\Motores\\Enemy\\Base\\ZombieBase.cs",
-              "RelativeDocumentMoniker": "..\\UTN 1st\\Assets\\Motores\\Enemy\\Base\\ZombieBase.cs",
-              "ToolTip": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\UTN 1st\\Assets\\Motores\\Enemy\\Base\\ZombieBase.cs",
-              "RelativeToolTip": "..\\UTN 1st\\Assets\\Motores\\Enemy\\Base\\ZombieBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T18:09:19.017Z",
+              "WhenOpened": "2025-05-22T20:13:36.392Z",
               "EditorCaption": ""
             }
           ]

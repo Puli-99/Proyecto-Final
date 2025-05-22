@@ -22,27 +22,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b2a21f38c4b916f43b46f752c618d010, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.934256
+      value: -15.48
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b2a21f38c4b916f43b46f752c618d010, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.0000019073486
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b2a21f38c4b916f43b46f752c618d010, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.212286
+      value: 21.27
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b2a21f38c4b916f43b46f752c618d010, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.6027604
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b2a21f38c4b916f43b46f752c618d010, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b2a21f38c4b916f43b46f752c618d010, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.7979223
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b2a21f38c4b916f43b46f752c618d010, type: 3}
       propertyPath: m_LocalRotation.z
@@ -54,7 +54,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b2a21f38c4b916f43b46f752c618d010, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 105.864
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b2a21f38c4b916f43b46f752c618d010, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -66,10 +66,65 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b2a21f38c4b916f43b46f752c618d010, type: 3}
       propertyPath: m_Name
-      value: chr_Gian
+      value: PreFab_Gian
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b2a21f38c4b916f43b46f752c618d010, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2444725055252284104}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b2a21f38c4b916f43b46f752c618d010, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3265064639830494126}
   m_SourcePrefab: {fileID: 100100000, guid: b2a21f38c4b916f43b46f752c618d010, type: 3}
+--- !u!1 &3363233255297217422 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b2a21f38c4b916f43b46f752c618d010, type: 3}
+  m_PrefabInstance: {fileID: 2480906161592225503}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2444725055252284104
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3363233255297217422}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 50, y: 25, z: 50}
+  m_Center: {x: 0, y: 10, z: 0}
+--- !u!114 &3265064639830494126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3363233255297217422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17385fd9f0bed894589e8192436bb405, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoguePanel: {fileID: 0}
+  npcImage: {fileID: 0}
+  npcName: {fileID: 0}
+  dialogueText: {fileID: 0}
+  textSpeed: 0.06
+  nextTextSpeed: 2
+  chrImage: {fileID: 21300000, guid: 3fa258a9ca0ed104fba26c96cbf0dfc4, type: 3}
+  dialogue:
+  - "Nene, quer\xE9s comprar algo?"
+  - Tengo de todo, barato y bueno
+  - Gracias, no hay reembolso

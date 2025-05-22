@@ -6,26 +6,34 @@ using UnityEngine.UI;
 
 public class Interaction : MonoBehaviour
 {
+    [Header("Referencias del Panel")]
     [SerializeField] GameObject dialoguePanel;
+    [SerializeField] UnityEngine.UI.Image npcImage;
+    [SerializeField] TMP_Text npcName;
     [SerializeField] TMP_Text dialogueText;
-    [SerializeField] TMP_Text npcNameText;
-    [SerializeField] protected string[] dialogue;
-    int index;
-    [SerializeField] float textSpeed;
+
+    [Header("Variables Lógicas del diálogo")]
+    [SerializeField] float textSpeed = 0.06f;
+    [SerializeField] float nextTextSpeed = 2f;
     bool isPlayerClose = false;
-    [SerializeField] float nextTextSpeed;
+    int index;
+    bool isDialogueActive = false;
+
+    [Header("Variables únicas para cada NPC")]
     [SerializeField] Sprite chrImage;
-    [SerializeField] UnityEngine.UI.Image image;
-    void ClearText()
+    [SerializeField] protected string[] dialogue;
+
+    void Clear() //Limpia variables y valores
     {
-        image.sprite = null;
+        npcImage.sprite = null;
         dialogueText.text = "";
-        npcNameText.text = "";
+        npcName.text = "";
         index = 0;
         dialoguePanel.SetActive(false);
+        isDialogueActive = false;
     }
 
-    IEnumerator Typing()
+    IEnumerator Typing() //Escribe letra por letra del diálogo y cuando termina de escribirse todo, espera un tiempo para pasar al siguiente texto
     {
         foreach (char letter in dialogue[index].ToCharArray())
         {
@@ -37,8 +45,8 @@ public class Interaction : MonoBehaviour
         NextLine();
     }
 
-    void NextLine()
-    {
+    void NextLine() //index = que parte del array de dialogos se esta mostrando. Si quedan dialogos, suma 1 a index para mostrar el siguiente dialogo borrando el anterior.
+    {              //Si se mostraron todos entonces limpia.
         if (index < dialogue.Length - 1)
         {
             index++;
@@ -47,23 +55,26 @@ public class Interaction : MonoBehaviour
         }
         else
         {
-            ClearText();
+            Clear();
         }
     }
 
-    void Interact()
+    void Interact() //Si el player esta cerca, no hay ningún dialogo activo y si pulsamos E entonces limpiamos el texto previo por si quedo algo, y luego activamos
+                   //isDialogueActive así si el player pulsa muchas veces E no se bugea el texto, activamos el panel para que se muestren los textos e imagenes
+                  //y le damos valor a esas imagenes y textos.
     {
-        if (isPlayerClose && Input.GetKeyDown(KeyCode.E))
+        if (isPlayerClose && !isDialogueActive && Input.GetKeyDown(KeyCode.E))
         {
             if (dialoguePanel.activeInHierarchy)
             {
-                ClearText();
+                Clear();
             }
             else
             {
+                isDialogueActive = true;
                 dialoguePanel.SetActive(true);
-                image.sprite = chrImage;
-                npcNameText.text = gameObject.name;
+                npcImage.sprite = chrImage;
+                npcName.text = gameObject.name;
                 StartCoroutine(Typing());
             }
         }
@@ -74,7 +85,7 @@ public class Interaction : MonoBehaviour
         Interact();
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other) //Cuando entra en rango del collider activa el bool para poder interactuar
     {
         if (other.gameObject.CompareTag("Player"))
         {
@@ -82,11 +93,12 @@ public class Interaction : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit(Collider other) //Cuando sale del rango del collider limpia el texto y frena la generación de texto.
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            ClearText();
+            Clear();
+            StopAllCoroutines();
             isPlayerClose = false;
         }
     }

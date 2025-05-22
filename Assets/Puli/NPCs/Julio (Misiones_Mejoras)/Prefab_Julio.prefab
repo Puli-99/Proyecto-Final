@@ -22,7 +22,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c17bfbcb9ddcd024084eec00ed6c7fe0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.607279
+      value: 7.81
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c17bfbcb9ddcd024084eec00ed6c7fe0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -30,19 +30,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c17bfbcb9ddcd024084eec00ed6c7fe0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.5822172
+      value: 28.41
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c17bfbcb9ddcd024084eec00ed6c7fe0, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.29287463
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c17bfbcb9ddcd024084eec00ed6c7fe0, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c17bfbcb9ddcd024084eec00ed6c7fe0, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -0.9561509
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c17bfbcb9ddcd024084eec00ed6c7fe0, type: 3}
       propertyPath: m_LocalRotation.z
@@ -54,7 +54,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c17bfbcb9ddcd024084eec00ed6c7fe0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -145.94
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c17bfbcb9ddcd024084eec00ed6c7fe0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -71,5 +71,59 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c17bfbcb9ddcd024084eec00ed6c7fe0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4994236244470100630}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c17bfbcb9ddcd024084eec00ed6c7fe0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 160088602229729610}
   m_SourcePrefab: {fileID: 100100000, guid: c17bfbcb9ddcd024084eec00ed6c7fe0, type: 3}
+--- !u!1 &1170350410721075376 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c17bfbcb9ddcd024084eec00ed6c7fe0, type: 3}
+  m_PrefabInstance: {fileID: 2088688013340974561}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &4994236244470100630
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170350410721075376}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 50, y: 25, z: 50}
+  m_Center: {x: 0, y: 10, z: 0}
+--- !u!114 &160088602229729610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170350410721075376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c3a3e0ae14f4e04d861adbfb2185f6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoguePanel: {fileID: 0}
+  npcImage: {fileID: 0}
+  npcName: {fileID: 0}
+  dialogueText: {fileID: 0}
+  textSpeed: 0.06
+  nextTextSpeed: 2
+  chrImage: {fileID: 21300000, guid: 3de3df57af683544cb153f5ba94a868d, type: 3}
+  dialogue:
+  - Pibe, si me decis el coso del cosito no te entiendo
+  - "Podes ser m\xE1s claro en que es lo que ten\xE9s?"
