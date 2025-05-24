@@ -8,7 +8,6 @@ using UnityEngine.Rendering;
 public class PlayerMovement : MonoBehaviour
 {
     NavMeshAgent agent;
-    [SerializeField] float speed;
     void Awake()
     { 
         agent = GetComponent<NavMeshAgent>();

@@ -74,38 +74,19 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ea07e1179ccb3bf4fac868ee6f366f1c, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 4414339285358346661}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ea07e1179ccb3bf4fac868ee6f366f1c, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 5501118545928320823}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ea07e1179ccb3bf4fac868ee6f366f1c, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4414339285358346661}
+      addedObject: {fileID: 8947467670126424481}
   m_SourcePrefab: {fileID: 100100000, guid: ea07e1179ccb3bf4fac868ee6f366f1c, type: 3}
 --- !u!1 &1899627769452384442 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ea07e1179ccb3bf4fac868ee6f366f1c, type: 3}
   m_PrefabInstance: {fileID: 1629666128565399019}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5501118545928320823
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1899627769452384442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d810663640504234a80322e2a1469fdf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialoguePanel: {fileID: 0}
-  dialogueText: {fileID: 0}
-  npcNameText: {fileID: 0}
-  dialogue:
-  - Hola amigo
-  - Veo que llevas tiempo sin aparecer
-  - "Qu\xE9 te trae por aqu\xED?"
-  textSpeed: 0.06
-  nextTextSpeed: 2
-  chrImage: {fileID: 21300000, guid: 464571f2e935b5849ba70259f4a4b76d, type: 3}
 --- !u!65 &4414339285358346661
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -127,3 +108,42 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 50, y: 25, z: 50}
   m_Center: {x: 0, y: 10, z: 0}
+--- !u!114 &5501118545928320823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899627769452384442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d810663640504234a80322e2a1469fdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoguePanel: {fileID: 0}
+  npcImage: {fileID: 0}
+  npcName: {fileID: 0}
+  dialogueText: {fileID: 0}
+  textSpeed: 0.06
+  nextTextSpeed: 2
+  chrImage: {fileID: 21300000, guid: 464571f2e935b5849ba70259f4a4b76d, type: 3}
+  dialogue:
+  - Hola amigo
+  - Veo que llevas tiempo sin aparecer
+  - "Qu\xE9 te trae por aqu\xED?"
+--- !u!208 &8947467670126424481
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899627769452384442}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 5, y: 7, z: 5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 7, z: 0}
+  m_TimeToStationary: 0.5

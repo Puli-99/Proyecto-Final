@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Playables;
 
-public class PlayerHealth : MonoBehaviour
+public class PlayerLife : MonoBehaviour, IDamageable, IKillable
 {
     public List<IObserver> observers = new List<IObserver>();
 
@@ -32,17 +31,14 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    void TakeDamage(int damage)
-    {
+    public void TakeDamage(int damage)
+    { 
         health -= damage;
         NotifyObservers(new PlayerDataContainer(PlayerDataContainer.NotificationType.TookDamage, damage));
     }
 
-    void Lose()
+    public void Die()
     {
-        if (health <= 0)
-        {
-            //Die Logic
-        }
+
     }
 }

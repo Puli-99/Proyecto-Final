@@ -6,13 +6,13 @@ public class PlayerNotifyer : MonoBehaviour
 {
     //Register observators to publishers
 
-    public PlayerHealth playerHealth;
+    public PlayerLife playerLife;
     public HealthBoard healthBoard;
 
     void Start()
     {
-        playerHealth = FindObjectOfType<PlayerHealth>();
+        playerLife = FindObjectOfType<PlayerLife>();
         healthBoard = FindObjectOfType<HealthBoard>();
-        playerHealth.RegisterObserver(healthBoard);
+        playerLife.RegisterObserver(healthBoard);
     }
 }
