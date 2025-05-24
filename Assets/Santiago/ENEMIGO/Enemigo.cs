@@ -1,14 +1,27 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Enemigo : MonoBehaviour
 {
     public float velocidad = 3f;
     public float rangoVision = 10f;
     public float rangoSonido = 5f;
+    public string nombreEscenaCombate = "EscenaCombate"; // Define la escena de combate
     public Transform jugador;
     private bool persiguiendo = false;
 
     void Update()
+    {
+        DetectarJugador();
+        
+        // Movimiento hacia el jugador si está en persecución
+        if (persiguiendo)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, jugador.position, velocidad * Time.deltaTime);
+        }
+    }
+
+    void DetectarJugador()
     {
         // Detección de visión
         Vector3 direccionJugador = jugador.position - transform.position;
@@ -29,11 +42,14 @@ public class Enemigo : MonoBehaviour
         {
             persiguiendo = true;
         }
+    }
 
-        // Movimiento hacia el jugador si está en persecución
-        if (persiguiendo)
+    void OnTriggerEnter(Collider otro)
+    {
+        // Si el jugador entra en contacto con el enemigo, cambia a la escena de combate
+        if (otro.CompareTag("Jugador"))
         {
-            transform.position = Vector3.MoveTowards(transform.position, jugador.position, velocidad * Time.deltaTime);
+            SceneManager.LoadScene(nombreEscenaCombate);
         }
     }
 }
