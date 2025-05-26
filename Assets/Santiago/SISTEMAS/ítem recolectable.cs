@@ -8,7 +8,7 @@ public class ItemRecolectable : MonoBehaviour
 
     void OnTriggerEnter(Collider otro)
     {
-        if (otro.CompareTag("Player"))
+        if (otro.CompareTag("Jugador"))
         {
             dentroRango = true;
         }
@@ -16,7 +16,7 @@ public class ItemRecolectable : MonoBehaviour
 
     void OnTriggerExit(Collider otro)
     {
-        if (otro.CompareTag("Player"))
+        if (otro.CompareTag("Jugador"))
         {
             dentroRango = false;
         }
