@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 1050942550734719052}
   - component: {fileID: 4598694786358955938}
   - component: {fileID: 5127293930601305923}
+  - component: {fileID: 3839429172887770291}
+  - component: {fileID: 2035021378237410239}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -165,7 +167,7 @@ NavMeshAgent:
   m_Speed: 10
   m_Acceleration: 10
   avoidancePriority: 50
-  m_AngularSpeed: 0
+  m_AngularSpeed: 500
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -184,6 +186,32 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca23d9b13376f4d4ab82ee815416985d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3839429172887770291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258636409397627192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 817db00095b55194f8f1a03db51d6ff7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cinemachine: {fileID: 0}
+  rotationSpeed: 100
+--- !u!114 &2035021378237410239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258636409397627192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9df9d5ab51b718e449944949f9496d8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &5850761621352600309

@@ -23,6 +23,43 @@ public class Interaction : MonoBehaviour
     [SerializeField] Sprite chrImage;
     [SerializeField] protected string[] dialogue;
 
+    //Patrón Observer para notificar a los scripts de los npcs cuando termina el dialogo.
+    public List<IObserverNpcDialogue> observers = new List<IObserverNpcDialogue>();
+
+    public void RegisterObserver(IObserverNpcDialogue observer)
+    {
+        GameObject observerGO = ((MonoBehaviour)observer).gameObject;
+
+        if (observerGO != this.gameObject) //Evita que un Npc se registre en otro con otro nombre. Gian se bugeó y por alguna razón se registraba en maría
+        {                                 //por lo que esto me sirve para que este bug no suceda
+            return;
+        }
+
+        if (!observers.Contains(observer))
+        {
+            observers.Add(observer);
+            Debug.Log(observer);
+        }
+    }
+
+    public void UnregisterObserver(IObserverNpcDialogue observer)
+    {
+        if (observers.Contains(observer))
+        {
+            observers.Remove(observer);
+        }
+    }
+
+    void NotifyObservers()
+    {
+        foreach (IObserverNpcDialogue observer in observers)
+        {
+            observer.OnNotify();
+        }
+    }//Aca termina el patrón Observer.
+
+
+
     void Clear() //Limpia variables y valores
     {
         npcImage.sprite = null;
@@ -56,6 +93,7 @@ public class Interaction : MonoBehaviour
         else
         {
             Clear();
+            NotifyObservers();
         }
     }
 

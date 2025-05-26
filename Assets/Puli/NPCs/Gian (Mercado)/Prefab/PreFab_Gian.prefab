@@ -22,7 +22,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b2a21f38c4b916f43b46f752c618d010, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.48
+      value: 135.51
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b2a21f38c4b916f43b46f752c618d010, type: 3}
       propertyPath: m_LocalPosition.y
@@ -30,7 +30,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b2a21f38c4b916f43b46f752c618d010, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 21.27
+      value: -283.54
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b2a21f38c4b916f43b46f752c618d010, type: 3}
       propertyPath: m_LocalRotation.w
@@ -125,12 +125,11 @@ MonoBehaviour:
   npcName: {fileID: 0}
   dialogueText: {fileID: 0}
   textSpeed: 0.06
-  nextTextSpeed: 2
+  nextTextSpeed: 1
   chrImage: {fileID: 21300000, guid: 3fa258a9ca0ed104fba26c96cbf0dfc4, type: 3}
   dialogue:
-  - "Nene, quer\xE9s comprar algo?"
-  - Tengo de todo, barato y bueno
-  - Gracias, no hay reembolso
+  - T1
+  - T2
 --- !u!208 &8128927084936935138
 NavMeshObstacle:
   m_ObjectHideFlags: 0

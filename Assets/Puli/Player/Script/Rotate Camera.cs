@@ -30,11 +30,9 @@ public class RotateCamera : MonoBehaviour
     {
         isRotating = true;
         float currentValue = cinemachine.m_XAxis.Value;
-        Debug.Log("CV " + currentValue);
 
         if (currentValue >= 179 && currentValue <= 180)
         {
-            Debug.Log("valgo -180");
             currentValue = -179;
             cinemachine.m_XAxis.Value = -179;
         }

@@ -22,7 +22,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c17bfbcb9ddcd024084eec00ed6c7fe0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.81
+      value: 158.79999
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c17bfbcb9ddcd024084eec00ed6c7fe0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -30,7 +30,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c17bfbcb9ddcd024084eec00ed6c7fe0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 28.41
+      value: -276.4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c17bfbcb9ddcd024084eec00ed6c7fe0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -125,11 +125,11 @@ MonoBehaviour:
   npcName: {fileID: 0}
   dialogueText: {fileID: 0}
   textSpeed: 0.06
-  nextTextSpeed: 2
+  nextTextSpeed: 1
   chrImage: {fileID: 21300000, guid: 3de3df57af683544cb153f5ba94a868d, type: 3}
   dialogue:
-  - Pibe, si me decis el coso del cosito no te entiendo
-  - "Podes ser m\xE1s claro en que es lo que ten\xE9s?"
+  - T1
+  - T2
 --- !u!208 &3535146595347042593
 NavMeshObstacle:
   m_ObjectHideFlags: 0

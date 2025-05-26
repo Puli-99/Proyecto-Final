@@ -22,7 +22,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ea07e1179ccb3bf4fac868ee6f366f1c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.29
+      value: 144.7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ea07e1179ccb3bf4fac868ee6f366f1c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -30,7 +30,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ea07e1179ccb3bf4fac868ee6f366f1c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.21
+      value: -297.6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ea07e1179ccb3bf4fac868ee6f366f1c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -125,12 +125,12 @@ MonoBehaviour:
   npcName: {fileID: 0}
   dialogueText: {fileID: 0}
   textSpeed: 0.06
-  nextTextSpeed: 2
+  nextTextSpeed: 1
   chrImage: {fileID: 21300000, guid: 464571f2e935b5849ba70259f4a4b76d, type: 3}
   dialogue:
-  - Hola amigo
-  - Veo que llevas tiempo sin aparecer
-  - "Qu\xE9 te trae por aqu\xED?"
+  - Text1
+  - Text2
+  - Text3
 --- !u!208 &8947467670126424481
 NavMeshObstacle:
   m_ObjectHideFlags: 0
