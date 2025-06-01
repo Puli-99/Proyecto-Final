@@ -1,9 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ArielDialogue : Interaction, IObserverNpcDialogue
 {
+    [SerializeField] GameObject missionPanel;
+    [SerializeField] TMP_Text missionText;
+
+
     private void OnEnable() //Debido a los bugs tuve que implementar esto para que se registren correctamente
     {
         Interaction interaction = GetComponent<Interaction>();
@@ -24,6 +29,6 @@ public class ArielDialogue : Interaction, IObserverNpcDialogue
 
     public void OnNotify()
     {
-        Debug.Log("Ariel");
+        missionPanel.SetActive(true);        
     }
 }

@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class GianDialogue : Interaction, IObserverNpcDialogue
 {
+    [SerializeField] GameObject marketPanel;
+    Inventario inventory;
+
     private void OnEnable() //Debido a los bugs tuve que implementar esto para que se registren correctamente
     {
         Interaction interaction = GetComponent<Interaction>();
@@ -25,6 +28,6 @@ public class GianDialogue : Interaction, IObserverNpcDialogue
 
     public void OnNotify()
     {
-        Debug.Log("Gian");
+        marketPanel.SetActive(true);
     }
 }

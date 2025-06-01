@@ -38,7 +38,7 @@ public class Interaction : MonoBehaviour
         if (!observers.Contains(observer))
         {
             observers.Add(observer);
-            Debug.Log(observer);
+            //Debug.Log(observer); //Para saber si algun observer se metió en otro que no debía
         }
     }
 
