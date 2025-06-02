@@ -2,16 +2,16 @@ using UnityEngine;
 
 public class CombatManager : MonoBehaviour
 {
-    // Enum que define los posibles turnos en el combate
-    private enum Turno { Jugador, Enemigo }
+    // define los posibles turnos en el combate
+    private enum Turno { Player, Enemigo }
     
     // Variable que almacena quién tiene el turno actualmente
-    private Turno turnoActual = Turno.Jugador;
+    private Turno turnoActual = Turno.Player;
 
     void Start()
     {
         // Se ejecuta al inicio de la escena y establece el turno inicial
-        turnoActual = Turno.Jugador; // Comienza con el turno del jugador
+        turnoActual = Turno.Player; // Comienza con el turno del jugador
     }
 
     public void EjecutarAccionJugador()
@@ -24,7 +24,7 @@ public class CombatManager : MonoBehaviour
     void CambiarTurno()
     {
         // Alterna el turno entre el jugador y el enemigo
-        turnoActual = (turnoActual == Turno.Jugador) ? Turno.Enemigo : Turno.Jugador;
+        turnoActual = (turnoActual == Turno.Player) ? Turno.Enemigo : Turno.Player;
         
         // Si es el turno del enemigo, ejecuta su ataque automáticamente
         if (turnoActual == Turno.Enemigo)
