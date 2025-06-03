@@ -22,8 +22,13 @@ public class JulioScript : Interaction, IObserverNpcDialogue
         }
     }
 
-    public void OnNotify()
+    public void OnNotify(DialogueEventType eventType)
     {
-        Debug.Log("Julio");
+        switch (eventType)
+        {
+            default:
+                Debug.Log("Default");
+                break;
+        }
     }
 }

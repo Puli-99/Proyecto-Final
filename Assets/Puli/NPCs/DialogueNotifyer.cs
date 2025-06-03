@@ -11,8 +11,9 @@ public class DialogueNotifyer : MonoBehaviour
 
     void Start()
     {
-        interaction = FindObjectOfType<Interaction>();
-        gianDialogue = FindObjectOfType<GianDialogue>();
-        interaction.RegisterObserver(gianDialogue);
+        //interaction = FindObjectOfType<Interaction>();
+        //gianDialogue = FindObjectOfType<GianDialogue>();
+        //interaction.RegisterObserver(gianDialogue);
+        //Sospecho que esto me causó el error del extra gian
     }
 }

@@ -7,6 +7,12 @@ public class PlayerLife : MonoBehaviour, IDamageable, IKillable
     public List<IObserver> observers = new List<IObserver>();
 
     int health = 100;
+    int defense = 0;
+    public void AddDefense(int amount) //Setter para agregar defensa al comprar en el Market
+    {
+        defense += amount;
+        Debug.Log(defense);
+    }
 
     public void RegisterObserver(IObserver observer)
     {
@@ -33,12 +39,15 @@ public class PlayerLife : MonoBehaviour, IDamageable, IKillable
 
     public void TakeDamage(int damage)
     { 
-        health -= damage;
+        health -= damage - defense;
         NotifyObservers(new PlayerDataContainer(PlayerDataContainer.NotificationType.TookDamage, damage));
     }
 
     public void Die()
     {
-
+        if (health == 0)
+        {
+            //Die Logic
+        }
     }
 }

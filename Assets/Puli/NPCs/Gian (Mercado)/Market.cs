@@ -4,20 +4,16 @@ using UnityEngine;
 
 public class Market : MonoBehaviour
 {
-    Bank bank;
-
-    void Awake()
-    {
-        bank = FindObjectOfType<Bank>();
-    }
-
+    [SerializeField] Bank bank;
+    [SerializeField] PlayerLife player;
+    
 
     public void BuyArmor()
     {
         if (bank.CurrentBalance >= 10)
         {
+            player.AddDefense(10);
             bank.Withdraw(15);
-            //Dar armadura
         }
         else
         {

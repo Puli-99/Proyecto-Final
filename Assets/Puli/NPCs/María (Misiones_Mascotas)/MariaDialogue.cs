@@ -22,9 +22,14 @@ public class MariaDialogue : Interaction, IObserverNpcDialogue
         }
     }
 
-    public void OnNotify()
+    public void OnNotify(DialogueEventType eventType)
     {
-        Debug.Log("Maria");
+        switch (eventType)
+        {
+            default:
+                Debug.Log("Default");
+                break;
+        }
     }
 
 }

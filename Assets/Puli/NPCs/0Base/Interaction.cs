@@ -23,6 +23,14 @@ public class Interaction : MonoBehaviour
     [SerializeField] Sprite chrImage;
     [SerializeField] protected string[] dialogue;
 
+
+    [HideInInspector]
+    public enum DialogueEventType //Diferentes estados evento de dialogo para que los npcs sepan cuál NotifyObserver estan recibiendo.
+    {
+        DialogueExited, DialogueEnded, Example
+    }
+
+
     //Patrón Observer para notificar a los scripts de los npcs cuando termina el dialogo.
     public List<IObserverNpcDialogue> observers = new List<IObserverNpcDialogue>();
 
@@ -50,11 +58,11 @@ public class Interaction : MonoBehaviour
         }
     }
 
-    void NotifyObservers()
+    public void NotifyObservers(DialogueEventType eventType)
     {
         foreach (IObserverNpcDialogue observer in observers)
         {
-            observer.OnNotify();
+            observer.OnNotify(eventType);
         }
     }//Aca termina el patrón Observer.
 
@@ -93,7 +101,7 @@ public class Interaction : MonoBehaviour
         else
         {
             Clear();
-            NotifyObservers();
+            NotifyObservers(DialogueEventType.DialogueEnded);
         }
     }
 
@@ -138,6 +146,7 @@ public class Interaction : MonoBehaviour
             Clear();
             StopAllCoroutines();
             isPlayerClose = false;
+            NotifyObservers(DialogueEventType.DialogueExited);
         }
     }
 }

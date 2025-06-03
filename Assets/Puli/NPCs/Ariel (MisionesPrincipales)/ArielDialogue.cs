@@ -27,8 +27,17 @@ public class ArielDialogue : Interaction, IObserverNpcDialogue
         }
     }
 
-    public void OnNotify()
+    public void OnNotify(DialogueEventType eventType)
     {
-        missionPanel.SetActive(true);        
+        switch (eventType)
+        {
+            case DialogueEventType.DialogueEnded:
+                missionPanel.SetActive(true);
+                break;
+
+            default:
+                Debug.Log("Default");
+                break;
+        }
     }
 }

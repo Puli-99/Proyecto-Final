@@ -26,8 +26,21 @@ public class GianDialogue : Interaction, IObserverNpcDialogue
     }
 
 
-    public void OnNotify()
+    public void OnNotify(DialogueEventType eventType)
     {
-        marketPanel.SetActive(true);
+        switch (eventType)
+        {
+            case DialogueEventType.DialogueEnded:
+                marketPanel.SetActive(true);
+                break;
+
+            case DialogueEventType.DialogueExited:
+                marketPanel.SetActive(false);
+                break;
+
+            default:
+                Debug.Log("Default");
+                break;
+        }
     }
 }

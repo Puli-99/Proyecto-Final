@@ -27,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
         bool isHit = Physics.Raycast(ray, out hit);
         if (isHit)
         {
+            Debug.DrawRay(hit.point, agent.destination, Color.red);
             agent.destination = hit.point;
         }
     }    
