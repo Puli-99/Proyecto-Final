@@ -7,12 +7,12 @@ public class PlayerNotifyer : MonoBehaviour
     //Register observators to publishers
 
     public PlayerLife playerLife;
-    public HealthBoard healthBoard;
+    public PlayerHealthBoard playerHealthBoard;
 
     void Start()
     {
         playerLife = FindObjectOfType<PlayerLife>();
-        healthBoard = FindObjectOfType<HealthBoard>();
-        playerLife.RegisterObserver(healthBoard);
+        playerHealthBoard = FindObjectOfType<PlayerHealthBoard>();
+        playerLife.RegisterObserver(playerHealthBoard);
     }
 }

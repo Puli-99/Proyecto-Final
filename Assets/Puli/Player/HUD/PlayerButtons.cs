@@ -4,14 +4,19 @@ using UnityEngine;
 
 public class PlayerButtons : MonoBehaviour
 {
+    [SerializeField] GameObject playerPanel;
+    [SerializeField] GameObject itemPanel;
+
+
     public void Atack()
     {
         Debug.Log("Atacar");
     }
 
-    public void Heal()
+    public void Items()
     {
-        Debug.Log("Curar");
+        playerPanel.SetActive(false);
+        itemPanel.SetActive(true);
     }
 
     public void Talk()

@@ -8,6 +8,13 @@ public class PlayerLife : MonoBehaviour, IDamageable, IKillable
 
     int health = 100;
     int defense = 0;
+
+    public void AddHealth(int amount)//Setter para agregar vida al usar el boton de curar
+    {
+        health += amount;
+        NotifyObservers(new PlayerDataContainer(PlayerDataContainer.NotificationType.LifeHealed, amount));
+        Debug.Log(health);
+    }
     public void AddDefense(int amount) //Setter para agregar defensa al comprar en el Market
     {
         defense += amount;

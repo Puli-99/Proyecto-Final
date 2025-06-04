@@ -5,7 +5,7 @@ using UnityEngine;
 //DataContainer
  public class PlayerDataContainer
  {
-    public enum NotificationType { LifeLost, TookDamage } //Creeating values of NotificationTypes
+    public enum NotificationType { TookDamage, LifeHealed } //Creeating values of NotificationTypes
 
     public NotificationType Type; //Notification Type Var
     public int Value;            //Value Var
