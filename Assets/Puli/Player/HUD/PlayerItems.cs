@@ -15,15 +15,15 @@ public class PlayerItems : MonoBehaviour
         player.AddHealth(heal);
     }
     
-    public void Armor()
+    public void Defense()
     {
         //Add Defense player.AddDefense(extradefense)
-        Debug.Log("MoreDamage");
+        Debug.Log("MoreDefense");
     }
 
     public void Weapons()
     {
-        Debug.Log("MoreArmor");
+        Debug.Log("MoreDamage");
         //Add Damage player.AddDamage(extradamage)
     }
 }

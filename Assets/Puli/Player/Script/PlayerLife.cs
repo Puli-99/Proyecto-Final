@@ -18,6 +18,7 @@ public class PlayerLife : MonoBehaviour, IDamageable, IKillable
     public void AddDefense(int amount) //Setter para agregar defensa al comprar en el Market
     {
         defense += amount;
+        NotifyObservers(new PlayerDataContainer(PlayerDataContainer.NotificationType.Defense, amount));
         Debug.Log(defense);
     }
 
