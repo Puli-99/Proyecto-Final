@@ -25,7 +25,7 @@ public class Checkpoint : MonoBehaviour {
             Debug.Log("✅ Partida guardada en el checkpoint.");
         }
 
-        if (Input.GetKeyDown(KeyCode.R)) {
+        if (Input.GetKeyDown(KeyCode.L)) {
             if (lastCheckpointPosition != Vector3.zero) {
                 GameObject Player = GameObject.FindGameObjectWithTag("Player");
                 if (Player != null) {
