@@ -14,6 +14,6 @@ public class DialogueNotifyer : MonoBehaviour
         //interaction = FindObjectOfType<Interaction>();
         //gianDialogue = FindObjectOfType<GianDialogue>();
         //interaction.RegisterObserver(gianDialogue);
-        //Sospecho que esto me causó el error del extra gian
+        //Esto causa un bug en el cual gian se registra dos veces. De momento no lo boror por si lo necesito en un futuro, pero de momento no debe usarse este script.
     }
 }

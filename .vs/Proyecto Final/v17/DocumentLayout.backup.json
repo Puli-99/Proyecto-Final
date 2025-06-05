@@ -1,118 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|d:\\users\\puli\\documents\\proyectos unity\\proyecto final\\assets\\puli\\player\\script\\rotate camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|solutionrelative:assets\\puli\\player\\script\\rotate camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|d:\\users\\puli\\documents\\proyectos unity\\proyecto final\\assets\\puli\\player\\script\\playerlife.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|solutionrelative:assets\\puli\\player\\script\\playerlife.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\assets\\puli\\player\\script\\playerhealthboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|solutionrelative:assets\\puli\\player\\script\\playerhealthboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\assets\\puli\\player\\script\\playerdatacontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|solutionrelative:assets\\puli\\player\\script\\playerdatacontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\assets\\puli\\player\\hud\\playeritems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|solutionrelative:assets\\puli\\player\\hud\\playeritems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\assets\\puli\\player\\hud\\playerbuttons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|solutionrelative:assets\\puli\\player\\hud\\playerbuttons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Rotate Camera.cs",
-              "DocumentMoniker": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Player\\Script\\Rotate Camera.cs",
-              "RelativeDocumentMoniker": "Assets\\Puli\\Player\\Script\\Rotate Camera.cs",
-              "ToolTip": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Player\\Script\\Rotate Camera.cs",
-              "RelativeToolTip": "Assets\\Puli\\Player\\Script\\Rotate Camera.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T01:45:41.096Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PlayerDataContainer.cs",
-              "DocumentMoniker": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Player\\Script\\PlayerDataContainer.cs",
-              "RelativeDocumentMoniker": "Assets\\Puli\\Player\\Script\\PlayerDataContainer.cs",
-              "ToolTip": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Player\\Script\\PlayerDataContainer.cs",
-              "RelativeToolTip": "Assets\\Puli\\Player\\Script\\PlayerDataContainer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T18:55:02.093Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PlayerLife.cs",
-              "DocumentMoniker": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Player\\Script\\PlayerLife.cs",
-              "RelativeDocumentMoniker": "Assets\\Puli\\Player\\Script\\PlayerLife.cs",
-              "ToolTip": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Player\\Script\\PlayerLife.cs",
-              "RelativeToolTip": "Assets\\Puli\\Player\\Script\\PlayerLife.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAxwCUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T18:20:05.499Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PlayerHealthBoard.cs",
-              "DocumentMoniker": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Player\\Script\\PlayerHealthBoard.cs",
-              "RelativeDocumentMoniker": "Assets\\Puli\\Player\\Script\\PlayerHealthBoard.cs",
-              "ToolTip": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Player\\Script\\PlayerHealthBoard.cs",
-              "RelativeToolTip": "Assets\\Puli\\Player\\Script\\PlayerHealthBoard.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T18:54:17.448Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PlayerItems.cs",
-              "DocumentMoniker": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Player\\HUD\\PlayerItems.cs",
-              "RelativeDocumentMoniker": "Assets\\Puli\\Player\\HUD\\PlayerItems.cs",
-              "ToolTip": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Player\\HUD\\PlayerItems.cs",
-              "RelativeToolTip": "Assets\\Puli\\Player\\HUD\\PlayerItems.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T18:21:43.803Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PlayerButtons.cs",
-              "DocumentMoniker": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Player\\HUD\\PlayerButtons.cs",
-              "RelativeDocumentMoniker": "Assets\\Puli\\Player\\HUD\\PlayerButtons.cs",
-              "ToolTip": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Player\\HUD\\PlayerButtons.cs",
-              "RelativeToolTip": "Assets\\Puli\\Player\\HUD\\PlayerButtons.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T18:19:55.976Z"
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

@@ -22,7 +22,7 @@ public class BaseEnemy : MonoBehaviour, IDamageable, IKillable
     public void TakeDamage(int damage) //IDamageable Interface
     {
         health -= damage;
-        Debug.Log(health);
+        Debug.Log("Enemy health is: " + health);
         Die();
     }
 
@@ -38,6 +38,5 @@ public class BaseEnemy : MonoBehaviour, IDamageable, IKillable
     public void EnemyTurn(IDamageable target)
     {
         target.TakeDamage(damage);
-        Debug.Log("Ataque Enemigo");
     }
 }
