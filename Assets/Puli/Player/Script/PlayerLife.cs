@@ -7,21 +7,9 @@ public class PlayerLife : MonoBehaviour, IDamageable, IKillable
     public List<IObserver> observers = new List<IObserver>();
 
     int health = 100;
-    int defense = 0;
+    int defense = 100;
 
-    public void AddHealth(int amount)//Setter para agregar vida al usar el boton de curar
-    {
-        health += amount;
-        NotifyObservers(new PlayerDataContainer(PlayerDataContainer.NotificationType.LifeHealed, amount));
-        Debug.Log(health);
-    }
-    public void AddDefense(int amount) //Setter para agregar defensa al comprar en el Market
-    {
-        defense += amount;
-        NotifyObservers(new PlayerDataContainer(PlayerDataContainer.NotificationType.Defense, amount));
-        Debug.Log(defense);
-    }
-
+  
     public void RegisterObserver(IObserver observer)
     {
         if (!observers.Contains(observer))
@@ -45,17 +33,34 @@ public class PlayerLife : MonoBehaviour, IDamageable, IKillable
         }
     }
 
+    public void AddHealth(int amount)//Setter para agregar vida al usar el boton de curar
+    {
+        health += amount;
+        NotifyObservers(new PlayerDataContainer(PlayerDataContainer.NotificationType.LifeHealed, amount));
+        Debug.Log(health);
+    }
+    public void AddDefense(int amount) //Setter para agregar defensa al comprar en el Market
+    {
+        defense += amount;
+        NotifyObservers(new PlayerDataContainer(PlayerDataContainer.NotificationType.Defense, amount));
+        Debug.Log(defense);
+    }
+
     public void TakeDamage(int damage)
-    { 
-        health -= damage - defense;
+    {
+        int damageToHealth = Mathf.Max(damage - defense, 0);
+        defense = Mathf.Max(defense - damage, 0);
+        health -= damageToHealth;
+
         NotifyObservers(new PlayerDataContainer(PlayerDataContainer.NotificationType.TookDamage, damage));
+        Die();
     }
 
     public void Die()
     {
-        if (health == 0)
+        if (health <= 0)
         {
-            //Die Logic
+            gameObject.SetActive(false);
         }
     }
 }

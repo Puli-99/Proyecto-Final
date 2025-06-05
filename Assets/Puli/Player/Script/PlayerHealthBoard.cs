@@ -7,7 +7,7 @@ public class PlayerHealthBoard : MonoBehaviour, IObserver
 {
     //Logical Vars
     int health = 100;
-    int defense = 0;
+    int defense = 100;
 
     //Reference Vars
     [SerializeField] TMP_Text healthText;
@@ -18,12 +18,16 @@ public class PlayerHealthBoard : MonoBehaviour, IObserver
     {
         if (damage.Type == PlayerDataContainer.NotificationType.TookDamage)
         {
-            health -= damage.Value - defense;
-            healthText.text = $"Health: {(health).ToString()}";
-            if (health <= 0)
+            int damageToHealth = Mathf.Max(damage.Value - defense, 0);
+            defense = Mathf.Max(defense - damage.Value, 0);
+            health -= damageToHealth;
+            if (health < 0)
             {
-                health = 100;
+                health = 0;
             }
+
+            healthText.text = $"Vida: {(health).ToString()}";
+            defenseText.text = $"Defensa: {(defense).ToString()}";
         }
 
         else if (damage.Type == PlayerDataContainer.NotificationType.LifeHealed)

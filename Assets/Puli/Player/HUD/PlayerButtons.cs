@@ -6,10 +6,12 @@ public class PlayerButtons : MonoBehaviour
 {
     [SerializeField] GameObject playerPanel;
     [SerializeField] GameObject itemPanel;
+    [SerializeField] BaseEnemy enemy;
 
 
     public void Atack()
     {
+        enemy.TakeDamage(10);
         Debug.Log("Atacar");
     }
 

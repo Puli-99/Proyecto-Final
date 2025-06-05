@@ -3884,7 +3884,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerLife: {fileID: 0}
-  healthBoard: {fileID: 0}
+  playerHealthBoard: {fileID: 0}
 --- !u!4 &1456953777
 Transform:
   m_ObjectHideFlags: 0
@@ -6326,6 +6326,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3665431392630508524, guid: 66bb37edd1d8d4042a1586e094ad7e03, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1061454566}
     - target: {fileID: 4660096619166063074, guid: 66bb37edd1d8d4042a1586e094ad7e03, type: 3}
       propertyPath: bank
       value: 
