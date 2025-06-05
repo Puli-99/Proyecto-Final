@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gamba\\OneDrive\\Documentos\\GitHub\\Proyecto-Final\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{85CBBD16-46BA-FC78-BFBC-90B96C14C674}|Assembly-CSharp.csproj|c:\\users\\gamba\\onedrive\\documentos\\github\\proyecto-final\\assets\\textmesh pro\\fonts\\liberationsans - ofl.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{85CBBD16-46BA-FC78-BFBC-90B96C14C674}|Assembly-CSharp.csproj|solutionrelative:assets\\textmesh pro\\fonts\\liberationsans - ofl.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LiberationSans - OFL.txt",
+              "DocumentMoniker": "C:\\Users\\gamba\\OneDrive\\Documentos\\GitHub\\Proyecto-Final\\Assets\\TextMesh Pro\\Fonts\\LiberationSans - OFL.txt",
+              "RelativeDocumentMoniker": "Assets\\TextMesh Pro\\Fonts\\LiberationSans - OFL.txt",
+              "ToolTip": "C:\\Users\\gamba\\OneDrive\\Documentos\\GitHub\\Proyecto-Final\\Assets\\TextMesh Pro\\Fonts\\LiberationSans - OFL.txt",
+              "RelativeToolTip": "Assets\\TextMesh Pro\\Fonts\\LiberationSans - OFL.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-06-04T20:59:04.678Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
