@@ -2,18 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Market : MonoBehaviour
+public class Market_Maria : MonoBehaviour
 {
     [SerializeField] Bank bank;
     [SerializeField] PlayerLife player;
-    
+    [SerializeField] GameObject pet;
+    [SerializeField] int cost;
 
-    public void BuyArmor()
+    public void BuyPet()
     {
-        if (bank.CurrentBalance >= 10)
+        if (bank.CurrentBalance >= cost)
         {
-            player.AddDefense(10);
-            bank.Withdraw(15);
+            bank.Withdraw(cost);
+            pet.SetActive(true);
         }
         else
         {

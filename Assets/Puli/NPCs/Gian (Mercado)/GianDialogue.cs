@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class GianDialogue : Interaction, IObserverNpcDialogue
 {
-    [SerializeField] GameObject marketPanel;
-    Inventario inventory;
+    [SerializeField] GameObject gianMarket;
 
     private void OnEnable() //Debido a los bugs tuve que implementar esto para que se registren correctamente
     {
@@ -31,11 +30,11 @@ public class GianDialogue : Interaction, IObserverNpcDialogue
         switch (eventType)
         {
             case DialogueEventType.DialogueEnded:
-                marketPanel.SetActive(true);
+                gianMarket.SetActive(true);
                 break;
 
             case DialogueEventType.DialogueExited:
-                marketPanel.SetActive(false);
+                gianMarket.SetActive(false);
                 break;
 
             default:

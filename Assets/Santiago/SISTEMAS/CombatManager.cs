@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class CombatManager : MonoBehaviour
 {
+
+    [SerializeField] BaseEnemy enemy;
+    [SerializeField] PlayerLife playerLife;
     // define los posibles turnos en el combate
     private enum Turno { Player, Enemigo }
     
@@ -17,7 +20,6 @@ public class CombatManager : MonoBehaviour
     public void EjecutarAccionJugador()
     {
         // Esta función se ejecuta cuando el jugador realiza una acción, como atacar
-        Debug.Log("El jugador ataca!");
         CambiarTurno(); // Cambia el turno al enemigo
     }
 
@@ -35,8 +37,7 @@ public class CombatManager : MonoBehaviour
 
     void RealizarAtaqueEnemigo()
     {
-        // Esta función simula el ataque del enemigo
-        Debug.Log("El enemigo ataca!");
+        enemy.EnemyTurn(playerLife);
 
         // Después del ataque del enemigo, el turno vuelve al jugador
         CambiarTurno();
