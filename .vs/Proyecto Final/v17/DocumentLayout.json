@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|d:\\users\\puli\\documents\\proyectos unity\\proyecto final\\assets\\puli\\player\\hud\\playeritems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|solutionrelative:assets\\puli\\player\\hud\\playeritems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|d:\\users\\puli\\documents\\proyectos unity\\proyecto final\\assets\\puli\\enemies\\scripts\\baseenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|solutionrelative:assets\\puli\\enemies\\scripts\\baseenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|d:\\users\\puli\\documents\\proyectos unity\\proyecto final\\assets\\puli\\player\\hud\\playerbuttons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|solutionrelative:assets\\puli\\player\\hud\\playerbuttons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|d:\\users\\puli\\documents\\proyectos unity\\proyecto final\\assets\\puli\\player\\script\\playerlife.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|solutionrelative:assets\\puli\\player\\script\\playerlife.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|d:\\users\\puli\\documents\\proyectos unity\\proyecto final\\assets\\puli\\pet\\petdamagebuff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|solutionrelative:assets\\puli\\pet\\petdamagebuff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|d:\\users\\puli\\documents\\proyectos unity\\proyecto final\\assets\\puli\\npcs\\mar\u00EDa (misiones_mascotas)\\market_maria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|solutionrelative:assets\\puli\\npcs\\mar\u00EDa (misiones_mascotas)\\market_maria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|d:\\users\\puli\\documents\\proyectos unity\\proyecto final\\assets\\puli\\npcs\\mar\u00EDa (misiones_mascotas)\\mariadialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|solutionrelative:assets\\puli\\npcs\\mar\u00EDa (misiones_mascotas)\\mariadialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,32 +30,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PlayerItems.cs",
-              "DocumentMoniker": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Player\\HUD\\PlayerItems.cs",
-              "RelativeDocumentMoniker": "Assets\\Puli\\Player\\HUD\\PlayerItems.cs",
-              "ToolTip": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Player\\HUD\\PlayerItems.cs",
-              "RelativeToolTip": "Assets\\Puli\\Player\\HUD\\PlayerItems.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAA1AAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "MariaDialogue.cs",
+              "DocumentMoniker": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\NPCs\\Mar\u00EDa (Misiones_Mascotas)\\MariaDialogue.cs",
+              "RelativeDocumentMoniker": "Assets\\Puli\\NPCs\\Mar\u00EDa (Misiones_Mascotas)\\MariaDialogue.cs",
+              "ToolTip": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\NPCs\\Mar\u00EDa (Misiones_Mascotas)\\MariaDialogue.cs",
+              "RelativeToolTip": "Assets\\Puli\\NPCs\\Mar\u00EDa (Misiones_Mascotas)\\MariaDialogue.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA5wCsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T18:21:43.803Z",
+              "WhenOpened": "2025-06-05T18:30:14.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Market_Maria.cs",
+              "DocumentMoniker": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\NPCs\\Mar\u00EDa (Misiones_Mascotas)\\Market_Maria.cs",
+              "RelativeDocumentMoniker": "Assets\\Puli\\NPCs\\Mar\u00EDa (Misiones_Mascotas)\\Market_Maria.cs",
+              "ToolTip": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\NPCs\\Mar\u00EDa (Misiones_Mascotas)\\Market_Maria.cs",
+              "RelativeToolTip": "Assets\\Puli\\NPCs\\Mar\u00EDa (Misiones_Mascotas)\\Market_Maria.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T18:28:52.191Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "PlayerLife.cs",
-              "DocumentMoniker": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Player\\Script\\PlayerLife.cs",
-              "RelativeDocumentMoniker": "Assets\\Puli\\Player\\Script\\PlayerLife.cs",
-              "ToolTip": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Player\\Script\\PlayerLife.cs",
-              "RelativeToolTip": "Assets\\Puli\\Player\\Script\\PlayerLife.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAowC0AAAAAAAAAAAAAAA==",
+              "Title": "PetDamageBuff.cs",
+              "DocumentMoniker": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Pet\\PetDamageBuff.cs",
+              "RelativeDocumentMoniker": "Assets\\Puli\\Pet\\PetDamageBuff.cs",
+              "ToolTip": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Pet\\PetDamageBuff.cs",
+              "RelativeToolTip": "Assets\\Puli\\Pet\\PetDamageBuff.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T18:20:05.499Z",
+              "WhenOpened": "2025-06-05T18:12:20.564Z",
               "EditorCaption": ""
             },
             {
@@ -58,9 +79,22 @@
               "RelativeDocumentMoniker": "Assets\\Puli\\Player\\HUD\\PlayerButtons.cs",
               "ToolTip": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Player\\HUD\\PlayerButtons.cs",
               "RelativeToolTip": "Assets\\Puli\\Player\\HUD\\PlayerButtons.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBQAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T18:19:55.976Z",
+              "WhenOpened": "2025-06-05T18:11:04.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BaseEnemy.cs",
+              "DocumentMoniker": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Enemies\\Scripts\\BaseEnemy.cs",
+              "RelativeDocumentMoniker": "Assets\\Puli\\Enemies\\Scripts\\BaseEnemy.cs",
+              "ToolTip": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Enemies\\Scripts\\BaseEnemy.cs",
+              "RelativeToolTip": "Assets\\Puli\\Enemies\\Scripts\\BaseEnemy.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBcAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T18:20:54.356Z",
               "EditorCaption": ""
             }
           ]

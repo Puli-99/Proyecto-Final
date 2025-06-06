@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class PlayerItems : MonoBehaviour
 {
-    //[SerializeField] CombatManager combatManager;
     [SerializeField] PlayerLife player;
     [SerializeField] int heal;
     [SerializeField] int extradefense;
     [SerializeField] int extradamage;
+    [SerializeField] GameObject playerPanel;
 
     public void Heal()
     {
@@ -18,12 +18,16 @@ public class PlayerItems : MonoBehaviour
     public void Defense()
     {
         //Add Defense player.AddDefense(extradefense)
-        Debug.Log("MoreDefense");
     }
 
     public void Weapons()
     {
-        Debug.Log("MoreDamage");
         //Add Damage player.AddDamage(extradamage)
+    }
+
+    public void Back()
+    {
+        gameObject.SetActive(false);
+        playerPanel.SetActive(true);
     }
 }

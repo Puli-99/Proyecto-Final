@@ -6,11 +6,19 @@ public class PlayerButtons : MonoBehaviour
 {
     [SerializeField] GameObject playerPanel;
     [SerializeField] GameObject itemPanel;
+    [SerializeField] BaseEnemy enemy;
+    [SerializeField] int damage;
 
+    public void AddDamage(int amount)
+    {
+        damage += amount;
+        Debug.Log("Aumento de daño, nuevo daño: " + damage);
+    }
 
     public void Atack()
     {
-        Debug.Log("Atacar");
+        enemy.TakeDamage(damage);
+        Debug.Log("Daño: " + damage);
     }
 
     public void Items()

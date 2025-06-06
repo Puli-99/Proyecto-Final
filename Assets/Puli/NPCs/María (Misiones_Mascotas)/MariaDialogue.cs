@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class MariaDialogue : Interaction, IObserverNpcDialogue
 {
+    [SerializeField] GameObject mariaMarket;
+
+
     private void OnEnable() //Debido a los bugs tuve que implementar esto para que se registren correctamente
     {
         Interaction interaction = GetComponent<Interaction>();
@@ -26,10 +29,17 @@ public class MariaDialogue : Interaction, IObserverNpcDialogue
     {
         switch (eventType)
         {
+            case DialogueEventType.DialogueEnded:
+                mariaMarket.SetActive(true);
+                break;
+
+            case DialogueEventType.DialogueExited:
+                mariaMarket.SetActive(false);
+                break;
+
             default:
                 Debug.Log("Default");
                 break;
         }
     }
-
 }
