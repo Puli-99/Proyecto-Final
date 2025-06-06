@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\krotox\\Documents\\GitHub\\Proyecto-Final\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{85CBBD16-46BA-FC78-BFBC-90B96C14C674}|Assembly-CSharp.csproj|c:\\users\\krotox\\documents\\github\\proyecto-final\\assets\\initialmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85CBBD16-46BA-FC78-BFBC-90B96C14C674}|Assembly-CSharp.csproj|solutionrelative:assets\\initialmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85CBBD16-46BA-FC78-BFBC-90B96C14C674}|Assembly-CSharp.csproj|c:\\users\\krotox\\documents\\github\\proyecto-final\\assets\\puli\\player\\script\\rotate camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85CBBD16-46BA-FC78-BFBC-90B96C14C674}|Assembly-CSharp.csproj|solutionrelative:assets\\puli\\player\\script\\rotate camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "initialMenu.cs",
+              "DocumentMoniker": "C:\\Users\\krotox\\Documents\\GitHub\\Proyecto-Final\\Assets\\initialMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\initialMenu.cs",
+              "ToolTip": "C:\\Users\\krotox\\Documents\\GitHub\\Proyecto-Final\\Assets\\initialMenu.cs",
+              "RelativeToolTip": "Assets\\initialMenu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T17:12:28.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Rotate Camera.cs",
+              "DocumentMoniker": "C:\\Users\\krotox\\Documents\\GitHub\\Proyecto-Final\\Assets\\Puli\\Player\\Script\\Rotate Camera.cs",
+              "RelativeDocumentMoniker": "Assets\\Puli\\Player\\Script\\Rotate Camera.cs",
+              "ToolTip": "C:\\Users\\krotox\\Documents\\GitHub\\Proyecto-Final\\Assets\\Puli\\Player\\Script\\Rotate Camera.cs",
+              "RelativeToolTip": "Assets\\Puli\\Player\\Script\\Rotate Camera.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowDMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T01:49:39.756Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
