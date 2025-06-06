@@ -1,15 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerLife : MonoBehaviour, IDamageable, IKillable
 {
+    [SerializeField] Testing test;
+    
     public List<IObserver> observers = new List<IObserver>();
 
     int health = 100;
     int defense = 100;
 
-  
+    private void Update()
+    {
+        Die();
+    }
+
     public void RegisterObserver(IObserver observer)
     {
         if (!observers.Contains(observer))
@@ -60,7 +67,7 @@ public class PlayerLife : MonoBehaviour, IDamageable, IKillable
     {
         if (health <= 0)
         {
-            gameObject.SetActive(false);
+            SceneManager.LoadScene(0);
         }
     }
 }

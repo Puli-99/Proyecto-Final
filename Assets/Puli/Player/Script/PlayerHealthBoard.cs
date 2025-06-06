@@ -14,12 +14,13 @@ public class PlayerHealthBoard : MonoBehaviour, IObserver
     [SerializeField] TMP_Text defenseText;
 
 
-    public void OnNotify(PlayerDataContainer damage) //Given a Notification Type, sustracts the variable value type of the Notification
+
+    public void OnNotify(PlayerDataContainer amount)
     {
-        if (damage.Type == PlayerDataContainer.NotificationType.TookDamage)
+        if (amount.Type == PlayerDataContainer.NotificationType.TookDamage)
         {
-            int damageToHealth = Mathf.Max(damage.Value - defense, 0);
-            defense = Mathf.Max(defense - damage.Value, 0);
+            int damageToHealth = Mathf.Max(amount.Value - defense, 0);
+            defense = Mathf.Max(defense - amount.Value, 0);
             health -= damageToHealth;
             if (health < 0)
             {
@@ -30,15 +31,15 @@ public class PlayerHealthBoard : MonoBehaviour, IObserver
             defenseText.text = $"Defensa: {(defense).ToString()}";
         }
 
-        else if (damage.Type == PlayerDataContainer.NotificationType.LifeHealed)
+        else if (amount.Type == PlayerDataContainer.NotificationType.LifeHealed)
         {
-            health += damage.Value;
-            healthText.text = $"Health: {(health).ToString()}";
+            health += amount.Value;
+            healthText.text = $"Vida: {(health).ToString()}";
         }
 
-        else if (damage.Type == PlayerDataContainer.NotificationType.Defense)
+        else if (amount.Type == PlayerDataContainer.NotificationType.Defense)
         {
-            defense += damage.Value;
+            defense += amount.Value;
             defenseText.text = $"Defensa: {(defense).ToString()}";
         }
     }

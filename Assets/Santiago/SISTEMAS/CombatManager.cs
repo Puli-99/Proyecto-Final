@@ -31,13 +31,13 @@ public class CombatManager : MonoBehaviour
         // Si es el turno del enemigo, ejecuta su ataque automáticamente
         if (turnoActual == Turno.Enemigo)
         {
-            RealizarAtaqueEnemigo();
+            EnemyTurn();
         }
     }
 
-    void RealizarAtaqueEnemigo()
+    void EnemyTurn()
     {
-        enemy.EnemyTurn(playerLife);
+        enemy.EnemyAttack(playerLife);
 
         // Después del ataque del enemigo, el turno vuelve al jugador
         CambiarTurno();

@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Menu.unity
-    guid: 9ccd7fee20989e94896d1ce26588609d
+    path: Assets/Emiliano/Menuinitial.unity
+    guid: 728eab473d018f24da3c1a8f6f63fca5
   - enabled: 1
     path: Assets/Entregable/1_Hotel.unity
     guid: 32f69ab43dd0f744689bdc074449c26a

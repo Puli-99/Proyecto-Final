@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerButtons : MonoBehaviour
 {
@@ -8,11 +10,17 @@ public class PlayerButtons : MonoBehaviour
     [SerializeField] GameObject itemPanel;
     [SerializeField] BaseEnemy enemy;
     [SerializeField] int damage;
+    [SerializeField] TMP_Text damageText;
 
+
+    private void OnEnable()
+    {
+        damageText.text = $"Daño: {(damage).ToString()}";
+    }
     public void AddDamage(int amount)
     {
         damage += amount;
-        Debug.Log("Aumento de daño, nuevo daño: " + damage);
+        damageText.text = $"Daño: {(damage).ToString()}";
     }
 
     public void Atack()
@@ -29,6 +37,6 @@ public class PlayerButtons : MonoBehaviour
 
     public void Talk()
     {
-        Debug.Log("Hablar");
+        SceneManager.LoadScene(2);
     }
 }

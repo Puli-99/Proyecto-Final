@@ -7,7 +7,7 @@ public class Bank : MonoBehaviour
 {
     //Hacer distintos current variables para cada tipo de item recolectable.
     //Luego crear métodos para cada tipo de variable.
-    int currentBalance;
+    int currentBalance = 20;
     public int CurrentBalance { get { return currentBalance; } }
 
     [SerializeField] TextMeshProUGUI displayBalance;
