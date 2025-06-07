@@ -2,6 +2,7 @@
   "Version": 1,
   "WorkspaceRootPath": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "Documents": [
     {
       "AbsoluteMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|d:\\users\\puli\\documents\\proyectos unity\\proyecto final\\assets\\puli\\player\\script\\playerlife.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,10 +16,14 @@
 =======
   "Documents": [],
 >>>>>>> Stashed changes
+=======
+  "Documents": [],
+>>>>>>> Stashed changes
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
       "DocumentGroups": [
         {
@@ -54,6 +59,9 @@
           ]
         }
       ]
+=======
+      "DocumentGroups": []
+>>>>>>> Stashed changes
 =======
       "DocumentGroups": []
 >>>>>>> Stashed changes
