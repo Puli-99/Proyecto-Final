@@ -1,14 +1,36 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Enemigo : MonoBehaviour
 {
-    public float velocidad = 3f;
-    public float rangoVision = 10f;
-    public float rangoSonido = 5f;
-    public string nombreEscenaCombate = "EscenaCombate"; // Define la escena de combate
-    public Transform Player;
-    private bool persiguiendo = false;
+
+    //Variables propias de Enemigo para perseguir al jugador
+    [SerializeField] float velocidad = 3f;
+    [SerializeField] float rangoVision = 10f;
+    [SerializeField] float outOfSightRange;
+    [SerializeField] string nombreEscenaCombate = "EscenaCombate"; // Define la escena de combate
+    [SerializeField] Transform Player;
+    bool persiguiendo = false;
+
+
+    //Variables para transferir al enemigo en escena combate
+    public string enemyName = "Enemigo Genérico";
+    public int health = 100;
+    public int damage = 20;
+    public int defense = 10;
+
+    public EnemyData GetCombatData()
+    {
+        return new EnemyData
+        {
+            enemyName = this.enemyName,
+            health = this.health,
+            damage = this.damage,
+            defense = this.defense
+        };
+    }
+
 
     void Update()
     {
@@ -33,14 +55,21 @@ public class Enemigo : MonoBehaviour
                 if (hit.transform == Player)
                 {
                     persiguiendo = true;
+                    if (!GameManager.Instance.chasingEnemies.Contains(this))
+                    {
+                        GameManager.Instance.chasingEnemies.Add(this);
+                        Debug.Log(GameManager.Instance.chasingEnemies.Count);
+                    }
                 }
             }
         }
 
-        // Detección de ruido
-        if (Vector3.Distance(transform.position, Player.position) <= rangoSonido)
+        if (Vector3.Distance(transform.position, Player.position) >= outOfSightRange)
         {
-            persiguiendo = true;
+            persiguiendo = false;
+            GameManager.Instance.chasingEnemies.Remove(this);
+            Debug.Log(GameManager.Instance.chasingEnemies.Count);
+
         }
     }
 
@@ -49,6 +78,9 @@ public class Enemigo : MonoBehaviour
         // Si el jugador entra en contacto con el enemigo, cambia a la escena de combate
         if (otro.CompareTag("Player"))
         {
+            GameManager.Instance.returnPosition = otro.transform.position;
+
+
             SceneManager.LoadScene(nombreEscenaCombate);
         }
     }

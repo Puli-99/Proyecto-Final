@@ -8,10 +8,24 @@ public class BaseEnemy : MonoBehaviour, IDamageable, IKillable
 {
     private IStrategy attackStrategy;
     [SerializeField] protected int health = 20;
-    [SerializeField][Range(0, 20)] protected int damage;
+    [SerializeField] protected int damage;
     [SerializeField] TMP_Text healthText;
     [SerializeField] TMP_Text damageText;
     [SerializeField] TMP_Text defenseText;
+
+
+    public string enemyName;
+    public int defense;
+
+
+    public void Setup(EnemyData data)
+    {
+        this.enemyName = data.enemyName;
+        this.health = data.health;
+        this.damage = data.damage;
+        this.defense = data.defense;
+    }
+
 
 
     private void OnEnable()
@@ -41,10 +55,10 @@ public class BaseEnemy : MonoBehaviour, IDamageable, IKillable
     {
         if (health <= 0)
         {
-            SceneManager.LoadScene(2);
+            gameObject.SetActive(false);
         }
     }
- 
+
     void DisplayHealth()
     {
         healthText.text = ("Vida : " + health);
@@ -63,4 +77,6 @@ public class BaseEnemy : MonoBehaviour, IDamageable, IKillable
     {
         target.TakeDamage(damage);
     }
+
+    
 }

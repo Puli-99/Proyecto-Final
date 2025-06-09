@@ -19,6 +19,10 @@ public class PlayerMovement : MonoBehaviour
         {
             Move();
         }
+        if (Input.GetKey(KeyCode.S))
+        {
+            agent.ResetPath();
+        }
     }
     void Move()
     {
@@ -29,6 +33,6 @@ public class PlayerMovement : MonoBehaviour
         {
             Debug.DrawRay(hit.point, agent.destination, Color.red);
             agent.destination = hit.point;
-        }
+        }        
     }    
 }

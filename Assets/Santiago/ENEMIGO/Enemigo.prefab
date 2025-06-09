@@ -106,7 +106,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
+  m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &3317052665370572015
 Rigidbody:
@@ -169,7 +169,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 8
-  rangoVision: 10
-  rangoSonido: 5
+  rangoVision: 50
+  outOfSightRange: 60
   nombreEscenaCombate: EscenaCombate
-  Player: {fileID: 0}
+  Player: {fileID: 3868132112710676659, guid: b9685baefd5b9934a8c88eb792be967f, type: 3}
+  enemyName: "Enemigo Gen\xE9rico"
+  health: 100
+  damage: 20
+  defense: 10

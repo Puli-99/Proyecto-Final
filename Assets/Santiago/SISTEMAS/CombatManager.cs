@@ -1,11 +1,18 @@
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CombatManager : MonoBehaviour
 {
 
-    [SerializeField] BaseEnemy enemy;
     [SerializeField] PlayerLife playerLife;
-    // define los posibles turnos en el combate
+    [SerializeField] int sceneToReturn;
+    [SerializeField] GameObject baseEnemyPrefab; 
+    BaseEnemy[] enemy;
+    public List<EnemyData> currentEnemies = new List<EnemyData>();
+
+ 
+    // Define los posibles turnos en el combate
     private enum Turno { Player, Enemigo }
     
     // Variable que almacena quién tiene el turno actualmente
@@ -13,14 +20,35 @@ public class CombatManager : MonoBehaviour
 
     void Start()
     {
-        // Se ejecuta al inicio de la escena y establece el turno inicial
-        turnoActual = Turno.Player; // Comienza con el turno del jugador
+        PrepareCombatEnemies();
+
+        foreach (EnemyData data in currentEnemies)
+        {
+            GameObject newEnemy = Instantiate(baseEnemyPrefab); // Instanciás un nuevo enemigo
+            BaseEnemy combatScript = newEnemy.GetComponent<BaseEnemy>(); // Obtenés el script
+            combatScript.Setup(data); // Aplicás los datos (vida, ataque, defensa, etc.)
+        }
+
+        turnoActual = Turno.Player;
     }
+
+
+    public void PrepareCombatEnemies()
+    {
+        currentEnemies.Clear();
+
+        foreach (Enemigo enemigo in GameManager.Instance.chasingEnemies)
+        {
+            currentEnemies.Add(enemigo.GetCombatData());
+        }
+    }
+
 
     public void EjecutarAccionJugador()
     {
         // Esta función se ejecuta cuando el jugador realiza una acción, como atacar
         CambiarTurno(); // Cambia el turno al enemigo
+        FinishCombat();
     }
 
     void CambiarTurno()
@@ -37,9 +65,28 @@ public class CombatManager : MonoBehaviour
 
     void EnemyTurn()
     {
-        enemy.EnemyAttack(playerLife);
+        //enemy.EnemyAttack(playerLife);
 
         // Después del ataque del enemigo, el turno vuelve al jugador
         CambiarTurno();
+    }
+
+  
+
+    void FinishCombat()
+    {
+           bool anyAlive = false;
+           foreach (BaseEnemy enemies in enemy)
+           {
+               if (enemies.isActiveAndEnabled)
+               {
+                   anyAlive = true;                    
+               }
+           }
+
+           if (!anyAlive)
+           {
+               SceneManager.LoadScene(sceneToReturn);
+           }       
     }
 }
