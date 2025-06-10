@@ -58,7 +58,6 @@ public class Enemigo : MonoBehaviour
                     if (!GameManager.Instance.chasingEnemies.Contains(this))
                     {
                         GameManager.Instance.chasingEnemies.Add(this);
-                        Debug.Log(GameManager.Instance.chasingEnemies.Count);
                     }
                 }
             }

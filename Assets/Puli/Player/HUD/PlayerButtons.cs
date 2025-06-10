@@ -6,10 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class PlayerButtons : MonoBehaviour
 {
+    [SerializeField] CombatManager combatManager;
     [SerializeField] GameObject playerPanel;
     [SerializeField] GameObject itemPanel;
-    [SerializeField] BaseEnemy enemy;
     [SerializeField] int damage;
+    public int GetDamage() => damage; //Getter para poder usar en CombatManager y atacar al enemigo seleccionado
     [SerializeField] TMP_Text damageText;
 
 
@@ -25,7 +26,7 @@ public class PlayerButtons : MonoBehaviour
 
     public void Atack()
     {
-        enemy.TakeDamage(damage);
+        combatManager.PlayerDealsDamage();
         Debug.Log("Daño: " + damage);
     }
 

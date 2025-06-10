@@ -122,8 +122,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 70
   damage: 15
-  healthText: {fileID: 0}
-  damageText: {fileID: 0}
-  defenseText: {fileID: 0}
-  enemyName: Enemy
   defense: 0
+  enemyName: Enemy
+  healthText: {fileID: 7145568878054551079, guid: 3923ccf03a1281c47963e91f8e8bc72e, type: 3}
+  damageText: {fileID: 1699416200712201365, guid: 967863bb4afcf87459fdedd03edbdb7e, type: 3}
+  defenseText: {fileID: 6285950649547808895, guid: 5bf96222dc0eea74eb89cb8318b20e06, type: 3}
+  enemyButton: {fileID: 2093437262541832105, guid: c3a125653c8b62e4887a9bc3f3a607ba, type: 3}

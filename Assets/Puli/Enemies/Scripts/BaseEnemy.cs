@@ -3,19 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class BaseEnemy : MonoBehaviour, IDamageable, IKillable
 {
     private IStrategy attackStrategy;
     [SerializeField] protected int health = 20;
     [SerializeField] protected int damage;
+    [SerializeField] protected int defense;
+    [SerializeField] protected string enemyName;
     [SerializeField] TMP_Text healthText;
     [SerializeField] TMP_Text damageText;
     [SerializeField] TMP_Text defenseText;
+    [SerializeField] GameObject enemyButton;
 
 
-    public string enemyName;
-    public int defense;
+    //Getters para el CombatManager
+    public int GetHealth() => health;
+    public int GetDamage() => damage;
+    public int GetDefense() => defense;
+
 
 
     public void Setup(EnemyData data)
@@ -28,7 +35,7 @@ public class BaseEnemy : MonoBehaviour, IDamageable, IKillable
 
 
 
-    private void OnEnable()
+    private void OnEnable() //Mostrar esto cuando se seleeccione un enemigo
     {
         DisplayDamage();
         DisplayHealth();
@@ -48,6 +55,7 @@ public class BaseEnemy : MonoBehaviour, IDamageable, IKillable
     {
         health -= damage;
         DisplayHealth();
+        Debug.Log(health);
         Die();
     }
 
@@ -55,6 +63,7 @@ public class BaseEnemy : MonoBehaviour, IDamageable, IKillable
     {
         if (health <= 0)
         {
+            //enemyButton.SetActive(false);
             gameObject.SetActive(false);
         }
     }
@@ -76,7 +85,5 @@ public class BaseEnemy : MonoBehaviour, IDamageable, IKillable
     public void EnemyAttack(IDamageable target)
     {
         target.TakeDamage(damage);
-    }
-
-    
+    }    
 }

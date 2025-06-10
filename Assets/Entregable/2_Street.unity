@@ -576,6 +576,10 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 1061454563}
+    - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
+      propertyPath: enemyName
+      value: "\xD1and\xFA"
+      objectReference: {fileID: 0}
     - target: {fileID: 3317052665370572015, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
       propertyPath: m_Constraints
       value: 80
@@ -2949,6 +2953,10 @@ PrefabInstance:
     - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
       propertyPath: defense
       value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
+      propertyPath: enemyName
+      value: Fabricio
       objectReference: {fileID: 0}
     - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
       propertyPath: rangoVision
@@ -7107,6 +7115,10 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 1061454563}
+    - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
+      propertyPath: enemyName
+      value: Roberto
+      objectReference: {fileID: 0}
     - target: {fileID: 3317052665370572015, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
       propertyPath: m_Constraints
       value: 80
@@ -13122,6 +13134,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
+      propertyPath: enemyName
+      value: "Juli\xE1n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
       propertyPath: rangoVision
       value: 30
       objectReference: {fileID: 0}
@@ -15823,6 +15839,10 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 1061454563}
+    - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
+      propertyPath: enemyName
+      value: Tarantino
+      objectReference: {fileID: 0}
     - target: {fileID: 3317052665370572015, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
       propertyPath: m_Constraints
       value: 80
