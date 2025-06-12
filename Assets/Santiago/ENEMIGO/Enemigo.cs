@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Xml;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -13,12 +14,15 @@ public class Enemigo : MonoBehaviour
     [SerializeField] Transform Player;
     bool persiguiendo = false;
 
+    [SerializeField] EnemiesID enemiesID;
+
 
     //Variables para transferir al enemigo en escena combate
     public string enemyName = "Enemigo Genérico";
     public int health = 100;
     public int damage = 20;
     public int defense = 10;
+    public string enemigoID;
 
     public EnemyData GetCombatData()
     {
@@ -27,11 +31,18 @@ public class Enemigo : MonoBehaviour
             enemyName = this.enemyName,
             health = this.health,
             damage = this.damage,
-            defense = this.defense
+            defense = this.defense,
+            uniqueID = this.enemigoID //uniqueID = Enemigo1, debería hacer que valga a 
         };
     }
 
-
+    private void Start()
+    {
+        if (GameManager.Instance.defeatedEnemies.Contains(enemigoID))
+        {
+            gameObject.SetActive(false);
+        }
+    }
     void Update()
     {
         DetectarPlayer();
@@ -67,8 +78,6 @@ public class Enemigo : MonoBehaviour
         {
             persiguiendo = false;
             GameManager.Instance.chasingEnemies.Remove(this);
-            Debug.Log(GameManager.Instance.chasingEnemies.Count);
-
         }
     }
 
@@ -78,8 +87,6 @@ public class Enemigo : MonoBehaviour
         if (otro.CompareTag("Player"))
         {
             GameManager.Instance.returnPosition = otro.transform.position;
-
-
             SceneManager.LoadScene(nombreEscenaCombate);
         }
     }

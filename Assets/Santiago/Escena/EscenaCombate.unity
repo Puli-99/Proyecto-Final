@@ -222,17 +222,18 @@ MonoBehaviour:
   playerButtons: {fileID: 1570719480}
   playerLife: {fileID: 999442853}
   sceneToReturn: 2
-  baseEnemyPrefab: {fileID: 527211029}
   enemiesAlive: []
+  baseEnemyPrefab: {fileID: 527211029}
   currentEnemies: []
-  EnemyStatsHUD: {fileID: 303496827}
-  enemyButtonPrefab: {fileID: 2093437262541832105, guid: c3a125653c8b62e4887a9bc3f3a607ba, type: 3}
   selectedEnemy: {fileID: 0}
   selectedEnemyHealthText: {fileID: 336215540}
   selectedEnemyDamageText: {fileID: 1638014250}
   selectedEnemyDefenseText: {fileID: 1842089465}
+  EnemyStatsHUD: {fileID: 303496827}
+  enemyButtonPrefab: {fileID: 2093437262541832105, guid: c3a125653c8b62e4887a9bc3f3a607ba, type: 3}
   buttonParent: {fileID: 1654188065}
   prefabParent: {fileID: 1824674330}
+  dontgoaway: {fileID: 1702400632}
 --- !u!4 &168656159
 Transform:
   m_ObjectHideFlags: 0

@@ -13,6 +13,14 @@ public class PlayerMovement : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
     }
 
+    void Start()
+    {
+        if (GameManager.Instance.returnPosition != Vector3.zero)
+        {
+            transform.position = GameManager.Instance.returnPosition;
+        }
+    }
+
     void FixedUpdate()
     {
         if (Input.GetMouseButton(1))

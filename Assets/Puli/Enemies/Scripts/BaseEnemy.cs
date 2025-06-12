@@ -12,10 +12,10 @@ public class BaseEnemy : MonoBehaviour, IDamageable, IKillable
     [SerializeField] protected int damage;
     [SerializeField] protected int defense;
     [SerializeField] protected string enemyName;
+    [SerializeField] protected string uniqueID;
     [SerializeField] TMP_Text healthText;
     [SerializeField] TMP_Text damageText;
     [SerializeField] TMP_Text defenseText;
-    [SerializeField] GameObject enemyButton;
 
 
     //Getters para el CombatManager
@@ -31,6 +31,7 @@ public class BaseEnemy : MonoBehaviour, IDamageable, IKillable
         this.health = data.health;
         this.damage = data.damage;
         this.defense = data.defense;
+        this.uniqueID = data.uniqueID;//Acá es donde en realidad debería ir data.uniqueID pero no se asigna el valor.
     }
 
 
@@ -55,7 +56,6 @@ public class BaseEnemy : MonoBehaviour, IDamageable, IKillable
     {
         health -= damage;
         DisplayHealth();
-        Debug.Log(health);
         Die();
     }
 
@@ -63,7 +63,8 @@ public class BaseEnemy : MonoBehaviour, IDamageable, IKillable
     {
         if (health <= 0)
         {
-            //enemyButton.SetActive(false);
+            //Falta desactivar también el botón del enemigo que muere
+            GameManager.Instance.defeatedEnemies.Add(uniqueID);
             gameObject.SetActive(false);
         }
     }

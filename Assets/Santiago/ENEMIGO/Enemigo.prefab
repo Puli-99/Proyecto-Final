@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3317052665370572015}
   - component: {fileID: 8006675348417494787}
   - component: {fileID: 892121783049773799}
+  - component: {fileID: 4926374404934775271}
   m_Layer: 0
   m_Name: Enemigo
   m_TagString: Untagged
@@ -133,7 +134,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!65 &8006675348417494787
 BoxCollider:
@@ -173,7 +174,32 @@ MonoBehaviour:
   outOfSightRange: 60
   nombreEscenaCombate: EscenaCombate
   Player: {fileID: 3868132112710676659, guid: b9685baefd5b9934a8c88eb792be967f, type: 3}
+  enemiesID: {fileID: 11400000, guid: 8bafdf6a9deae8d4cba496a7fa777aeb, type: 2}
   enemyName: "Enemigo Gen\xE9rico"
   health: 100
   damage: 20
   defense: 10
+  enemigoID: 
+  dead: 0
+--- !u!195 &4926374404934775271
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6394728095176357723}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.99999994
+  m_BaseOffset: 0.49999997
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4

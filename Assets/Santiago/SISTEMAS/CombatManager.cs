@@ -6,28 +6,34 @@ using UnityEngine.UI;
 
 public class CombatManager : MonoBehaviour
 {
-    [SerializeField] PlayerButtons playerButtons;
+    //Variables lógicas
+    [SerializeField] PlayerButtons playerButtons; //Referencia para hacer daño. Se ejecuta en PlayerDealsDamage
     [SerializeField] PlayerLife playerLife; //Referencia del player para que el enemigo pueda hacerle daño
     [SerializeField] int sceneToReturn; //Escena a volver si el jugador gana el combate
+    [SerializeField] public List<BaseEnemy> enemiesAlive = new List<BaseEnemy>(); //Lista de enemigos en escena para determinar si estan todos vivos o no.
+
+
+    //Variables de translación de datos
     [SerializeField] GameObject baseEnemyPrefab; //Prefab para instanciar enemigos según la cantidad de enemigos que persiguieron al player.
-    [SerializeField] public List<BaseEnemy> enemiesAlive = new List<BaseEnemy>(); //Lista de enemigos en escena para determinar si estan todos vivos o no. 
-    BaseEnemy enemy;
     public List<EnemyData> currentEnemies = new List<EnemyData>(); //Lista de enemigos que persiguieron al Player hasta que fue llevado a la escena de combate
-    [SerializeField] GameObject EnemyStatsHUD;
 
 
-    [SerializeField] GameObject enemyButtonPrefab;
+    //Variables para cada enemigo cuando es seleccionado
     [SerializeField] BaseEnemy selectedEnemy;
-
-    //Textos para cada enemigo cuando es seleccionado
     [SerializeField] TMP_Text selectedEnemyHealthText;
     [SerializeField] TMP_Text selectedEnemyDamageText;
     [SerializeField] TMP_Text selectedEnemyDefenseText;
 
-    //Transforms para ubicar a los botones y prefabs. (Faltaría agregar un offsett para que no spawneen en el exacto mismo lugar y no se apilen)
+    //Variables para ubicar los botones y prefabs.
+    [SerializeField] GameObject EnemyStatsHUD;
+    [SerializeField] public GameObject enemyButtonPrefab;
     [SerializeField] Transform buttonParent;
     [SerializeField] Transform prefabParent;
-    Button btn;
+
+    //Variables para que el player spawnee en un lugar específico en la escena de combate y no en ReturnPosition
+    [SerializeField] Transform dontgoaway;
+    [SerializeField] Vector3 posicion = new Vector3(-7f, 1f, -12.5f);
+
 
 
 
@@ -43,6 +49,9 @@ public class CombatManager : MonoBehaviour
         PrepareCombatEnemies();
         CreateEnemies();     
         turnoActual = Turno.Player;
+
+        //Transform del player en donde queremos
+        dontgoaway.position = posicion;
     }
 
     void CreateEnemies()
@@ -81,9 +90,7 @@ public class CombatManager : MonoBehaviour
         }
     }
     public void PrepareCombatEnemies()
-    {
-        currentEnemies.Clear();
-
+    {      
         foreach (Enemigo enemigo in GameManager.Instance.chasingEnemies)
         {
             currentEnemies.Add(enemigo.GetCombatData());
@@ -145,8 +152,6 @@ public class CombatManager : MonoBehaviour
         CambiarTurno();
     }
 
-  
-
     void FinishCombat() //Chequea si queda algun enemigo vivo en escena, si no hay ninguno vivo, volvemos a la escena sceneToReturn (Editar donde corresponda en el motor)
     {
            bool anyAlive = false;
@@ -160,6 +165,7 @@ public class CombatManager : MonoBehaviour
 
            if (!anyAlive)
            {
+               GameManager.Instance.chasingEnemies.Clear();
                SceneManager.LoadScene(sceneToReturn);
            }       
     }

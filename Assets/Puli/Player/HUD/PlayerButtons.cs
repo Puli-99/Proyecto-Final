@@ -38,6 +38,7 @@ public class PlayerButtons : MonoBehaviour
 
     public void Talk()
     {
+        GameManager.Instance.chasingEnemies.Clear();
         SceneManager.LoadScene(2);
     }
 }
