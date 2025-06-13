@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Enemigo : MonoBehaviour
 {
-
-    //Variables propias de Enemigo para perseguir al jugador
+       
+    [Header("Variables propias de Enemigo para perseguir al jugador")]
     [SerializeField] float velocidad = 3f;
     [SerializeField] float rangoVision = 10f;
     [SerializeField] float outOfSightRange;
@@ -14,15 +14,24 @@ public class Enemigo : MonoBehaviour
     [SerializeField] Transform Player;
     bool persiguiendo = false;
 
+    [Header("Variables para Patrullaje")]
+    [SerializeField] List<Vector3> nextPosition = new List<Vector3>();
+    int positionIndex = 0;
+    [SerializeField] float rotationSpeed = 3;
+    float distanciaMinima = 0.1f;
+    int ordenar;
+
+    [Header("")]
+    [Tooltip("Añadir ScripteableObject")]
     [SerializeField] EnemiesID enemiesID;
 
 
-    //Variables para transferir al enemigo en escena combate
-    public string enemyName = "Enemigo Genérico";
-    public int health = 100;
-    public int damage = 20;
-    public int defense = 10;
-    public string enemigoID;
+    [Header("Variables para transferir al enemigo en escena combate")]   
+    [SerializeField] string enemyName = "Enemigo Genérico";
+    [SerializeField] int health = 100;
+    [SerializeField] int damage = 20;
+    [SerializeField] int defense = 10;
+    [SerializeField] string enemigoID;
 
     public EnemyData GetCombatData()
     {
@@ -42,6 +51,10 @@ public class Enemigo : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
+        if (nextPosition.Count > 0)
+        {
+            transform.position = nextPosition[0];
+        }
     }
     void Update()
     {
@@ -50,7 +63,42 @@ public class Enemigo : MonoBehaviour
         // Movimiento hacia el jugador si está en persecución
         if (persiguiendo)
         {
+            transform.LookAt(Player);
             transform.position = Vector3.MoveTowards(transform.position, Player.position, velocidad * Time.deltaTime);
+        }
+
+        else
+        {
+            Patrolling();
+        }
+    }
+
+    void Patrolling()
+    {
+        if (nextPosition.Count == 0) return;
+
+        Vector3 objetivoActual = nextPosition[positionIndex];
+        Vector3 direccion = (objetivoActual - transform.position).normalized;
+        transform.position += direccion * velocidad * Time.deltaTime;
+
+        if (direccion != Vector3.zero)
+        {
+            Quaternion rotacionObjetivo = Quaternion.LookRotation(direccion);
+            transform.rotation = Quaternion.Slerp(transform.rotation, rotacionObjetivo, Time.deltaTime * rotationSpeed);
+        }
+
+        if (Vector3.Distance(transform.position, objetivoActual) <= distanciaMinima)
+        {
+            if (positionIndex == 0)
+            {
+                ordenar = 1;
+            }
+            else if (positionIndex == nextPosition.Count - 1)
+            {
+                ordenar = -1;
+            }
+
+            positionIndex += ordenar;
         }
     }
 

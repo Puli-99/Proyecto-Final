@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b71e6249935c9b41adfbe5e8a604e78, type: 3}
   m_Name: CombatEnemy ID
   m_EditorClassIdentifier: 
-  enemyID: Carlos
+  enemyID: Enemigo 1
   enemyName: 
   enemyPrefab: {fileID: 2406671119320099522, guid: a5040f68a24595b4295bbc32b278ce6d, type: 3}
   comment: Type coomments here
