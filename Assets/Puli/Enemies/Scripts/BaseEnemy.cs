@@ -16,7 +16,7 @@ public class BaseEnemy : MonoBehaviour, IDamageable, IKillable
     [SerializeField] TMP_Text healthText;
     [SerializeField] TMP_Text damageText;
     [SerializeField] TMP_Text defenseText;
-    [SerializeField] GameObject prefab;
+    [SerializeField] GameObject player;
 
 
     //Getters para el CombatManager
@@ -32,8 +32,7 @@ public class BaseEnemy : MonoBehaviour, IDamageable, IKillable
         this.health = data.health;
         this.damage = data.damage;
         this.defense = data.defense;
-        this.uniqueID = data.uniqueID;//Acá es donde en realidad debería ir data.uniqueID pero no se asigna el valor.
-        this.prefab = data.prefab;
+        this.uniqueID = data.uniqueID;
     }
 
 
@@ -42,6 +41,7 @@ public class BaseEnemy : MonoBehaviour, IDamageable, IKillable
     {
         DisplayDamage();
         DisplayHealth();
+        transform.LookAt(player.transform);
     }
 
     public void SetAttackStrategy(IStrategy newStrategy)

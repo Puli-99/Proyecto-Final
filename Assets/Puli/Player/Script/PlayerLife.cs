@@ -9,8 +9,8 @@ public class PlayerLife : MonoBehaviour, IDamageable, IKillable
     
     public List<IObserver> observers = new List<IObserver>();
 
-    int health;
-    int defense;
+    int health = 100;
+    int defense = 100;
 
     private void Awake()
     {
@@ -19,6 +19,10 @@ public class PlayerLife : MonoBehaviour, IDamageable, IKillable
 
     private void Update()
     {
+        if (Input.GetKey(KeyCode.V))
+        {
+            Debug.Log(health);
+        }
         Die();
     }
 
