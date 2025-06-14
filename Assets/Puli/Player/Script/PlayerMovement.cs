@@ -13,11 +13,23 @@ public class PlayerMovement : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
     }
 
+    void Start()
+    {
+        if (GameManager.Instance.returnPosition != Vector3.zero)
+        {
+            transform.position = GameManager.Instance.returnPosition;
+        }
+    }
+
     void FixedUpdate()
     {
         if (Input.GetMouseButton(1))
         {
             Move();
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            agent.ResetPath();
         }
     }
     void Move()
@@ -29,6 +41,6 @@ public class PlayerMovement : MonoBehaviour
         {
             Debug.DrawRay(hit.point, agent.destination, Color.red);
             agent.destination = hit.point;
-        }
+        }        
     }    
 }

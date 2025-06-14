@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 3963576386827079073}
   - component: {fileID: 5399554494822901069}
   - component: {fileID: 5001332487599917359}
+  - component: {fileID: 6562344936586481434}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107,3 +108,24 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6562344936586481434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2406671119320099522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b7d922b95b6974e9758a107a589928, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 70
+  damage: 15
+  defense: 0
+  enemyName: Enemy
+  uniqueID: 
+  healthText: {fileID: 7145568878054551079, guid: 3923ccf03a1281c47963e91f8e8bc72e, type: 3}
+  damageText: {fileID: 1699416200712201365, guid: 967863bb4afcf87459fdedd03edbdb7e, type: 3}
+  defenseText: {fileID: 6285950649547808895, guid: 5bf96222dc0eea74eb89cb8318b20e06, type: 3}
+  prefab: {fileID: 919132149155446097, guid: d1cb31bb9275b204ca1cf493e6315e7e, type: 3}

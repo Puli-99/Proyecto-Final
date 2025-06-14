@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Testing : MonoBehaviour
 {
@@ -36,10 +37,16 @@ public class Testing : MonoBehaviour
     {
          if (lastCheckpointPosition != Vector3.zero)
          {
-             GameObject Player = GameObject.FindGameObjectWithTag("Player");
-             if (Player != null)
+             GameObject player = GameObject.FindGameObjectWithTag("Player");
+             if (player != null)
              {
-                 Player.transform.position = lastCheckpointPosition;
+                NavMeshAgent agent = player.GetComponent<NavMeshAgent>();
+                if (agent != null)
+                {
+                    agent.ResetPath(); //Detiene el movimiento actual
+                }
+
+                 player.transform.position = lastCheckpointPosition;
                  Debug.Log(" Teletransportado al último checkpoint guardado.");
              }
          }
