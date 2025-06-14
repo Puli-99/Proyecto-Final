@@ -1,3 +1,5 @@
+using UnityEngine;
+
 [System.Serializable]
 public class EnemyData
 {
@@ -6,4 +8,5 @@ public class EnemyData
     public int damage;
     public int defense;
     public string uniqueID;
+    public GameObject prefab;
 }

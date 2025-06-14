@@ -577,6 +577,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1061454563}
     - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 919132149155446097, guid: d1cb31bb9275b204ca1cf493e6315e7e, type: 3}
+    - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
       propertyPath: puntoA
       value: 
       objectReference: {fileID: 0}
@@ -984,6 +988,10 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 1061454563}
+    - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 919132149155446097, guid: d1cb31bb9275b204ca1cf493e6315e7e, type: 3}
     - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
       propertyPath: puntoA
       value: 
@@ -1545,6 +1553,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1061454563}
     - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 919132149155446097, guid: d1cb31bb9275b204ca1cf493e6315e7e, type: 3}
+    - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
       propertyPath: puntoA
       value: 
       objectReference: {fileID: 0}
@@ -2049,6 +2061,10 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 1061454563}
+    - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 919132149155446097, guid: d1cb31bb9275b204ca1cf493e6315e7e, type: 3}
     - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
       propertyPath: puntoA
       value: 
@@ -3007,6 +3023,10 @@ PrefabInstance:
       value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 919132149155446097, guid: d1cb31bb9275b204ca1cf493e6315e7e, type: 3}
+    - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
       propertyPath: puntoA
       value: 
       objectReference: {fileID: 0}
@@ -3515,6 +3535,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1061454563}
     - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 919132149155446097, guid: d1cb31bb9275b204ca1cf493e6315e7e, type: 3}
+    - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
       propertyPath: puntoA
       value: 
       objectReference: {fileID: 0}
@@ -3599,6 +3623,10 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 1061454563}
+    - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 919132149155446097, guid: d1cb31bb9275b204ca1cf493e6315e7e, type: 3}
     - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
       propertyPath: puntoA
       value: 
@@ -5172,6 +5200,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1061454563}
     - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 919132149155446097, guid: d1cb31bb9275b204ca1cf493e6315e7e, type: 3}
+    - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
       propertyPath: puntoA
       value: 
       objectReference: {fileID: 0}
@@ -6172,6 +6204,10 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 1061454563}
+    - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 919132149155446097, guid: d1cb31bb9275b204ca1cf493e6315e7e, type: 3}
     - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
       propertyPath: puntoA
       value: 
@@ -7240,6 +7276,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1061454563}
     - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 919132149155446097, guid: d1cb31bb9275b204ca1cf493e6315e7e, type: 3}
+    - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
       propertyPath: puntoA
       value: 
       objectReference: {fileID: 0}
@@ -8257,6 +8297,10 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 1061454563}
+    - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 919132149155446097, guid: d1cb31bb9275b204ca1cf493e6315e7e, type: 3}
     - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
       propertyPath: puntoA
       value: 
@@ -10614,6 +10658,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1061454563}
     - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 919132149155446097, guid: d1cb31bb9275b204ca1cf493e6315e7e, type: 3}
+    - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
       propertyPath: puntoA
       value: 
       objectReference: {fileID: 0}
@@ -12507,6 +12555,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1061454563}
     - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 919132149155446097, guid: d1cb31bb9275b204ca1cf493e6315e7e, type: 3}
+    - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
       propertyPath: puntoA
       value: 
       objectReference: {fileID: 0}
@@ -12614,6 +12666,7 @@ MonoBehaviour:
   damage: 50
   defense: 50
   enemigoID: Imported Enemy
+  prefab: {fileID: 0}
 --- !u!1 &893928006
 GameObject:
   m_ObjectHideFlags: 0
@@ -13363,6 +13416,10 @@ PrefabInstance:
       propertyPath: health
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 919132149155446097, guid: d1cb31bb9275b204ca1cf493e6315e7e, type: 3}
     - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
       propertyPath: puntoA
       value: 
@@ -16087,6 +16144,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1061454563}
     - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 919132149155446097, guid: d1cb31bb9275b204ca1cf493e6315e7e, type: 3}
+    - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
       propertyPath: puntoA
       value: 
       objectReference: {fileID: 0}
@@ -16623,6 +16684,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1061454563}
     - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 919132149155446097, guid: d1cb31bb9275b204ca1cf493e6315e7e, type: 3}
+    - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
       propertyPath: puntoA
       value: 
       objectReference: {fileID: 0}
@@ -17085,6 +17150,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1061454563}
     - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 919132149155446097, guid: d1cb31bb9275b204ca1cf493e6315e7e, type: 3}
+    - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
       propertyPath: puntoA
       value: 
       objectReference: {fileID: 0}
@@ -17513,6 +17582,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1061454563}
     - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 919132149155446097, guid: d1cb31bb9275b204ca1cf493e6315e7e, type: 3}
+    - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
       propertyPath: puntoA
       value: 
       objectReference: {fileID: 0}
@@ -17925,6 +17998,10 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 1061454563}
+    - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 919132149155446097, guid: d1cb31bb9275b204ca1cf493e6315e7e, type: 3}
     - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
       propertyPath: puntoA
       value: 
@@ -19896,6 +19973,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1061454563}
     - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 919132149155446097, guid: d1cb31bb9275b204ca1cf493e6315e7e, type: 3}
+    - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
       propertyPath: puntoA
       value: 
       objectReference: {fileID: 0}
@@ -21612,6 +21693,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1061454563}
     - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 919132149155446097, guid: d1cb31bb9275b204ca1cf493e6315e7e, type: 3}
+    - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
       propertyPath: puntoA
       value: 
       objectReference: {fileID: 0}
@@ -21718,6 +21803,10 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 1061454563}
+    - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 919132149155446097, guid: d1cb31bb9275b204ca1cf493e6315e7e, type: 3}
     - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
       propertyPath: puntoA
       value: 
@@ -22869,6 +22958,10 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 1061454563}
+    - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 919132149155446097, guid: d1cb31bb9275b204ca1cf493e6315e7e, type: 3}
     - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
       propertyPath: puntoA
       value: 
@@ -29409,6 +29502,10 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 1061454563}
+    - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 919132149155446097, guid: d1cb31bb9275b204ca1cf493e6315e7e, type: 3}
     - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
       propertyPath: puntoA
       value: 
