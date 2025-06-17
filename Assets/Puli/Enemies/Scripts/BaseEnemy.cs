@@ -1,12 +1,16 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class BaseEnemy : MonoBehaviour, IDamageable, IKillable
 {
+    public List<IObserverEnemy> observers = new List<IObserverEnemy>();
+
+
     private IStrategy attackStrategy;
     [SerializeField] protected int health = 20;
     [SerializeField] protected int damage;
@@ -17,6 +21,8 @@ public class BaseEnemy : MonoBehaviour, IDamageable, IKillable
     [SerializeField] TMP_Text damageText;
     [SerializeField] TMP_Text defenseText;
     [SerializeField] GameObject player;
+    [SerializeField] GameObject EnemyStatsHUD;
+    [SerializeField] CombatManager combatManager;
 
 
     //Getters para el CombatManager
@@ -25,6 +31,28 @@ public class BaseEnemy : MonoBehaviour, IDamageable, IKillable
     public int GetDefense() => defense;
 
 
+    public void RegisterObserver(IObserverEnemy observer)
+    {
+        if (!observers.Contains(observer))
+        {
+            observers.Add(observer);
+        }
+    }
+    public void UnregisterObserver(IObserverEnemy observer)
+    {
+        if (observers.Contains(observer))
+        {
+            observers.Remove(observer);
+        }
+    }
+
+    void NotifyObservers(EnemyDataContainer typeOfValue)
+    {
+        foreach (IObserverEnemy observer in observers)
+        {
+            observer.OnNotify(typeOfValue);
+        }
+    }
 
     public void Setup(EnemyData data)
     {
@@ -39,8 +67,6 @@ public class BaseEnemy : MonoBehaviour, IDamageable, IKillable
 
     private void OnEnable() //Mostrar esto cuando se seleeccione un enemigo
     {
-        DisplayDamage();
-        DisplayHealth();
         transform.LookAt(player.transform);
     }
 
@@ -56,8 +82,10 @@ public class BaseEnemy : MonoBehaviour, IDamageable, IKillable
 
     public void TakeDamage(int damage) //IDamageable Interface
     {
-        health -= damage;
-        DisplayHealth();
+        int damageToHealth = Mathf.Max(damage - defense, 0);
+        defense = Mathf.Max(defense - damage, 0);
+        health -= damageToHealth;
+        NotifyObservers(new EnemyDataContainer(EnemyDataContainer.NotificationType.TookDamage, damage));
         Die();
     }
 
@@ -66,25 +94,11 @@ public class BaseEnemy : MonoBehaviour, IDamageable, IKillable
         if (health <= 0)
         {
             //Falta desactivar también el botón del enemigo que muere
+            EnemyStatsHUD.SetActive(false);
             GameManager.Instance.defeatedEnemies.Add(uniqueID);
             gameObject.SetActive(false);
         }
     }
-
-    void DisplayHealth()
-    {
-        healthText.text = ("Vida : " + health);
-        if (health < 0)
-        {
-            healthText.text = ("Vida : 0");
-        }
-    }
-
-    void DisplayDamage()
-    {
-        damageText.text = ("Daño : " + damage);
-    }
-
     public void EnemyAttack(IDamageable target)
     {
         target.TakeDamage(damage);

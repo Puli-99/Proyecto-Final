@@ -3020,7 +3020,11 @@ PrefabInstance:
       objectReference: {fileID: 1061454563}
     - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
       propertyPath: damage
-      value: 50
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
+      propertyPath: health
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
       propertyPath: prefab
@@ -7275,6 +7279,10 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 1061454563}
+    - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
+      propertyPath: damage
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 892121783049773799, guid: c970731b57acb7c4ba0284b5551dcd9f, type: 3}
       propertyPath: prefab
       value: 
@@ -12666,7 +12674,6 @@ MonoBehaviour:
   damage: 50
   defense: 50
   enemigoID: Imported Enemy
-  prefab: {fileID: 0}
 --- !u!1 &893928006
 GameObject:
   m_ObjectHideFlags: 0

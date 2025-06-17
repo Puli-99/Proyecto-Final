@@ -4,13 +4,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PlayerLife : MonoBehaviour, IDamageable, IKillable
-{
-    [SerializeField] Testing test;
-    
+{    
     public List<IObserver> observers = new List<IObserver>();
 
-    int health = 100;
-    int defense = 100;
+    int health;
+    int defense;
 
     private void Awake()
     {
@@ -92,18 +90,18 @@ public class PlayerLife : MonoBehaviour, IDamageable, IKillable
     }
 
     void LoadPlayerData()
-{
-    health = PlayerPrefs.GetInt("Health", 100);
-    defense = PlayerPrefs.GetInt("Defense", 100);
-
-    if (health <= 0) 
     {
-        health = 100; // Resetear vida después de morir
-        PlayerPrefs.SetInt("Health", health);
-        PlayerPrefs.Save();
-    }
+        health = PlayerPrefs.GetInt("Health", 100);
+        defense = PlayerPrefs.GetInt("Defense", 100);
+
+        if (health <= 0) 
+        {
+            health = 100; // Resetear vida después de morir
+            PlayerPrefs.SetInt("Health", health);
+            PlayerPrefs.Save();
+        }
     
-    Debug.Log($"Vida cargada: {health}, Defensa cargada: {defense}");
-}
+        Debug.Log($"Vida cargada: {health}, Defensa cargada: {defense}");
+    }
 
 }

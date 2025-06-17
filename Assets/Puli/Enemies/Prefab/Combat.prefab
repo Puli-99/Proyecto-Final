@@ -101,10 +101,12 @@ MonoBehaviour:
   defense: 0
   enemyName: Enemy
   uniqueID: 
-  healthText: {fileID: 0}
-  damageText: {fileID: 0}
-  defenseText: {fileID: 0}
+  healthText: {fileID: 1699416200712201365, guid: 967863bb4afcf87459fdedd03edbdb7e, type: 3}
+  damageText: {fileID: 6285950649547808895, guid: 5bf96222dc0eea74eb89cb8318b20e06, type: 3}
+  defenseText: {fileID: 7145568878054551079, guid: 3923ccf03a1281c47963e91f8e8bc72e, type: 3}
   player: {fileID: 1258636409397627192, guid: b9685baefd5b9934a8c88eb792be967f, type: 3}
+  EnemyStatsHUD: {fileID: 8968301358069915206, guid: 085174f7f66ea5b44ae27cfc725015ee, type: 3}
+  combatManager: {fileID: 1867516302868037585, guid: 083911413086cc94c88bc65ce57f04f8, type: 3}
 --- !u!95 &3150172770935146276
 Animator:
   serializedVersion: 5
