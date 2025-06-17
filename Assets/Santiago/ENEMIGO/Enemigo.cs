@@ -32,7 +32,6 @@ public class Enemigo : MonoBehaviour
     [SerializeField] int damage = 20;
     [SerializeField] int defense = 10;
     [SerializeField] string enemigoID;
-    [SerializeField] GameObject prefab;
 
     public EnemyData GetCombatData()
     {
@@ -43,7 +42,6 @@ public class Enemigo : MonoBehaviour
             damage = this.damage,
             defense = this.defense,
             uniqueID = this.enemigoID,
-            prefab = this.prefab
         };
     }
 
