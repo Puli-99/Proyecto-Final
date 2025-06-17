@@ -12,7 +12,6 @@ public class NextLevel : MonoBehaviour
     {
         if (other.CompareTag("Player") && Input.GetKey(KeyCode.E))
         {
-            Debug.Log("Cambiar de nivel");
             SceneManager.LoadScene(level);
         }
     }
