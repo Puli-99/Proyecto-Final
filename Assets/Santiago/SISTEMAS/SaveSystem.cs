@@ -2,12 +2,13 @@ using System.IO;
 using UnityEngine;
 
 public class SaveSystem {
-    public static void SaveGame(Vector3 playerPosition, int collectedItems) {
+    public static void SaveGame(Vector3 playerPosition, int collectedItems, string sceneName) {
         GameData data = new GameData {
             playerX = playerPosition.x,
             playerY = playerPosition.y,
             playerZ = playerPosition.z,
-            collectedItems = collectedItems
+            collectedItems = collectedItems,
+            sceneName = sceneName
         };
 
         string json = JsonUtility.ToJson(data);

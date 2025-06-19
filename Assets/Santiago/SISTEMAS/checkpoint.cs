@@ -20,7 +20,7 @@ public class Checkpoint : MonoBehaviour {
     private void Update() {
         if (PlayerDentro && Input.GetKeyDown(KeyCode.E)) {
             int items = GameManager.Instance != null ? GameManager.Instance.collectedItems : 0;
-            SaveSystem.SaveGame(transform.position, items);
+            SaveSystem.SaveGame(transform.position, items, "mesi");
             lastCheckpointPosition = transform.position; // Guarda la posición del checkpoint
             Debug.Log("✅ Partida guardada en el checkpoint.");
         }

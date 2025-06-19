@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -7,6 +8,8 @@ using UnityEngine.UI;
 public class CombatManager : MonoBehaviour, IObserverEnemy
 {
     public static CombatManager Instance { get; private set; }
+
+    public List<EnemyUIData> enemyUIList = new List<EnemyUIData>();
 
     //Variables lógicas
     [SerializeField] PlayerButtons playerButtons; //Referencia para hacer daño. Se ejecuta en PlayerDealsDamage
@@ -84,12 +87,17 @@ public class CombatManager : MonoBehaviour, IObserverEnemy
             combatScript.Setup(data);
             enemiesAlive.Add(combatScript);
 
-            // Creamos el botón correspondiente al enemigo
             GameObject newButton = Instantiate(enemyButtonPrefab, buttonParent.position + buttonOffset * 50, Quaternion.identity, buttonParent);
             newButton.GetComponentInChildren<TMP_Text>().text = data.enemyName;
 
             Button btn = newButton.GetComponent<Button>();
             btn.onClick.AddListener(() => SelectEnemy(combatScript));
+
+            enemyUIList.Add(new EnemyUIData
+            {
+                enemy = combatScript,
+                button = newButton
+            });
 
             i++; // Avanzamos el índice
         }
@@ -165,6 +173,16 @@ public class CombatManager : MonoBehaviour, IObserverEnemy
 
         // Después del ataque del enemigo, el turno vuelve al jugador
         CambiarTurno();
+    }
+
+    public void OnEnemyDefeated(BaseEnemy defeatedEnemy)
+    {
+        // Buscar en la lista al enemigo
+        EnemyUIData uiData = enemyUIList.FirstOrDefault(e => e.enemy == defeatedEnemy);
+        if (uiData != null)
+        {
+            uiData.button.SetActive(false); // Desactiva el botón
+        }
     }
 
     void FinishCombat() //Chequea si queda algun enemigo vivo en escena, si no hay ninguno vivo, volvemos a la escena sceneToReturn (Editar donde corresponda en el motor)

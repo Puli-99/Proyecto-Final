@@ -20,6 +20,7 @@ public class BaseEnemy : MonoBehaviour, IDamageable, IKillable
 
     [SerializeField] GameObject player;
     [SerializeField] GameObject EnemyStatsHUD;
+    [SerializeField] CombatManager combatManager;
 
 
     //Getters para el CombatManager
@@ -60,11 +61,15 @@ public class BaseEnemy : MonoBehaviour, IDamageable, IKillable
         this.uniqueID = data.uniqueID;
     }
 
-
+    private void Awake()
+    {
+        EnemyStatsHUD = GameObject.Find("EnemyStats");
+    }
 
     private void OnEnable() //Mostrar esto cuando se seleeccione un enemigo
     {
         transform.LookAt(player.transform);
+        combatManager = FindObjectOfType<CombatManager>();
     }
 
     public void SetAttackStrategy(IStrategy newStrategy)
@@ -90,7 +95,7 @@ public class BaseEnemy : MonoBehaviour, IDamageable, IKillable
     {
         if (health <= 0)
         {
-            //Falta desactivar también el botón del enemigo que muere
+            combatManager.OnEnemyDefeated(this);
             EnemyStatsHUD.SetActive(false);
             GameManager.Instance.defeatedEnemies.Add(uniqueID);
             gameObject.SetActive(false);

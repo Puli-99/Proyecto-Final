@@ -5,6 +5,7 @@ public class GameManager : MonoBehaviour {
     public static GameManager Instance { get; private set; }
     public int collectedItems = 0;
     public Vector3 returnPosition;
+    public string sceneToReturn;
     public HashSet<string> defeatedEnemies = new HashSet<string>();
 
     public List<Enemigo> chasingEnemies = new List<Enemigo>();

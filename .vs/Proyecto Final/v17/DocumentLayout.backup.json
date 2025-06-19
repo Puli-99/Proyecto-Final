@@ -1,104 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\",
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|d:\\users\\puli\\documents\\proyectos unity\\proyecto final\\assets\\puli\\enemies\\hud\\enemyhud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|solutionrelative:assets\\puli\\enemies\\hud\\enemyhud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|d:\\users\\puli\\documents\\proyectos unity\\proyecto final\\assets\\puli\\player\\script\\playerlife.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|solutionrelative:assets\\puli\\player\\script\\playerlife.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|d:\\users\\puli\\documents\\proyectos unity\\proyecto final\\assets\\puli\\enemies\\scripts\\baseenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|solutionrelative:assets\\puli\\enemies\\scripts\\baseenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|d:\\users\\puli\\documents\\proyectos unity\\proyecto final\\assets\\puli\\player\\script\\playerhealthboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|solutionrelative:assets\\puli\\player\\script\\playerhealthboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
-=======
   "Documents": [],
->>>>>>> Stashed changes
-=======
-  "Documents": [],
->>>>>>> Stashed changes
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 2,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BaseEnemy.cs",
-              "DocumentMoniker": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Enemies\\Scripts\\BaseEnemy.cs",
-              "RelativeDocumentMoniker": "Assets\\Puli\\Enemies\\Scripts\\BaseEnemy.cs",
-              "ToolTip": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Enemies\\Scripts\\BaseEnemy.cs",
-              "RelativeToolTip": "Assets\\Puli\\Enemies\\Scripts\\BaseEnemy.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAuwE4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T00:29:15.956Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PlayerLife.cs",
-              "DocumentMoniker": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Player\\Script\\PlayerLife.cs",
-              "RelativeDocumentMoniker": "Assets\\Puli\\Player\\Script\\PlayerLife.cs",
-              "ToolTip": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Player\\Script\\PlayerLife.cs",
-              "RelativeToolTip": "Assets\\Puli\\Player\\Script\\PlayerLife.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAcwEcAAABqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T00:28:58.958Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EnemyHUD.cs",
-              "DocumentMoniker": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Enemies\\HUD\\EnemyHUD.cs",
-              "RelativeDocumentMoniker": "Assets\\Puli\\Enemies\\HUD\\EnemyHUD.cs",
-              "ToolTip": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Enemies\\HUD\\EnemyHUD.cs",
-              "RelativeToolTip": "Assets\\Puli\\Enemies\\HUD\\EnemyHUD.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwCAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T00:29:11.899Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PlayerHealthBoard.cs",
-              "DocumentMoniker": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Player\\Script\\PlayerHealthBoard.cs",
-              "RelativeDocumentMoniker": "Assets\\Puli\\Player\\Script\\PlayerHealthBoard.cs",
-              "ToolTip": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Player\\Script\\PlayerHealthBoard.cs",
-              "RelativeToolTip": "Assets\\Puli\\Player\\Script\\PlayerHealthBoard.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T00:28:57.703Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-=======
       "DocumentGroups": []
->>>>>>> Stashed changes
-=======
-      "DocumentGroups": []
->>>>>>> Stashed changes
     }
   ]
 }

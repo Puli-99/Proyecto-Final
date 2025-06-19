@@ -7,6 +7,7 @@ using UnityEngine.Rendering;
 
 public class PlayerMovement : MonoBehaviour
 {
+    Testing test;
     NavMeshAgent agent;
     void Awake()
     { 
@@ -15,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
+        test = GetComponent<Testing>();
         if (GameManager.Instance.returnPosition != Vector3.zero)
         {
             transform.position = GameManager.Instance.returnPosition;

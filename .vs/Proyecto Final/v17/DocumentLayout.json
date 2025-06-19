@@ -3,36 +3,40 @@
   "WorkspaceRootPath": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|d:\\users\\puli\\documents\\proyectos unity\\proyecto final\\assets\\puli\\enemies\\hud\\enemynotifyer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|solutionrelative:assets\\puli\\enemies\\hud\\enemynotifyer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|d:\\users\\puli\\documents\\proyectos unity\\proyecto final\\assets\\puli\\interfaces\\iobserverenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|solutionrelative:assets\\puli\\interfaces\\iobserverenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\assets\\puli\\enemies\\scripts\\baseenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|solutionrelative:assets\\puli\\enemies\\scripts\\baseenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|d:\\users\\puli\\documents\\proyectos unity\\proyecto final\\assets\\santiago\\sistemas\\combatmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|solutionrelative:assets\\santiago\\sistemas\\combatmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|d:\\users\\puli\\documents\\proyectos unity\\proyecto final\\assets\\puli\\enemies\\hud\\enemyhud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|solutionrelative:assets\\puli\\enemies\\hud\\enemyhud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\assets\\puli\\player\\script\\playerhealthboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|d:\\users\\puli\\documents\\proyectos unity\\proyecto final\\assets\\puli\\player\\script\\playerhealthboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|solutionrelative:assets\\puli\\player\\script\\playerhealthboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\assets\\puli\\player\\script\\playerlife.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|solutionrelative:assets\\puli\\player\\script\\playerlife.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|d:\\users\\puli\\documents\\proyectos unity\\proyecto final\\assets\\puli\\player\\hud\\bank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|solutionrelative:assets\\puli\\player\\hud\\bank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|d:\\users\\puli\\documents\\proyectos unity\\proyecto final\\assets\\puli\\player\\hud\\playerbuttons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|solutionrelative:assets\\puli\\player\\hud\\playerbuttons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|d:\\users\\puli\\documents\\proyectos unity\\proyecto final\\assets\\puli\\player\\script\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|solutionrelative:assets\\puli\\player\\script\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|d:\\users\\puli\\documents\\proyectos unity\\proyecto final\\assets\\puli\\player\\script\\respawn system\\testing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|solutionrelative:assets\\puli\\player\\script\\respawn system\\testing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|d:\\users\\puli\\documents\\proyectos unity\\proyecto final\\assets\\santiago\\enemigo\\enemigo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|solutionrelative:assets\\santiago\\enemigo\\enemigo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|d:\\users\\puli\\documents\\proyectos unity\\proyecto final\\assets\\santiago\\sistemas\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|solutionrelative:assets\\santiago\\sistemas\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|d:\\users\\puli\\documents\\proyectos unity\\proyecto final\\assets\\santiago\\sistemas\\savesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|solutionrelative:assets\\santiago\\sistemas\\savesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|d:\\users\\puli\\documents\\proyectos unity\\proyecto final\\assets\\puli\\enemies\\scripts\\baseenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{104D501E-6AC4-B64E-9BD9-CAC26AA2BA3F}|Assembly-CSharp.csproj|solutionrelative:assets\\puli\\enemies\\scripts\\baseenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,102 +46,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EnemyNotifyer.cs",
-              "DocumentMoniker": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Enemies\\HUD\\EnemyNotifyer.cs",
-              "RelativeDocumentMoniker": "Assets\\Puli\\Enemies\\HUD\\EnemyNotifyer.cs",
-              "ToolTip": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Enemies\\HUD\\EnemyNotifyer.cs",
-              "RelativeToolTip": "Assets\\Puli\\Enemies\\HUD\\EnemyNotifyer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T17:02:26.662Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IObserverEnemy.cs",
-              "DocumentMoniker": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Interfaces\\IObserverEnemy.cs",
-              "RelativeDocumentMoniker": "Assets\\Puli\\Interfaces\\IObserverEnemy.cs",
-              "ToolTip": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Interfaces\\IObserverEnemy.cs",
-              "RelativeToolTip": "Assets\\Puli\\Interfaces\\IObserverEnemy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T16:33:14.037Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BaseEnemy.cs",
-              "DocumentMoniker": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Enemies\\Scripts\\BaseEnemy.cs",
-              "RelativeDocumentMoniker": "Assets\\Puli\\Enemies\\Scripts\\BaseEnemy.cs",
-              "ToolTip": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Enemies\\Scripts\\BaseEnemy.cs",
-              "RelativeToolTip": "Assets\\Puli\\Enemies\\Scripts\\BaseEnemy.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAIwDEAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T00:29:15.956Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CombatManager.cs",
-              "DocumentMoniker": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Santiago\\SISTEMAS\\CombatManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Santiago\\SISTEMAS\\CombatManager.cs",
-              "ToolTip": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Santiago\\SISTEMAS\\CombatManager.cs",
-              "RelativeToolTip": "Assets\\Santiago\\SISTEMAS\\CombatManager.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAA0wHsAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T15:53:09.069Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EnemyHUD.cs",
-              "DocumentMoniker": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Enemies\\HUD\\EnemyHUD.cs",
-              "RelativeDocumentMoniker": "Assets\\Puli\\Enemies\\HUD\\EnemyHUD.cs",
-              "ToolTip": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Enemies\\HUD\\EnemyHUD.cs",
-              "RelativeToolTip": "Assets\\Puli\\Enemies\\HUD\\EnemyHUD.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwB4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T00:29:11.899Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PlayerButtons.cs",
-              "DocumentMoniker": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Player\\HUD\\PlayerButtons.cs",
-              "RelativeDocumentMoniker": "Assets\\Puli\\Player\\HUD\\PlayerButtons.cs",
-              "ToolTip": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Player\\HUD\\PlayerButtons.cs",
-              "RelativeToolTip": "Assets\\Puli\\Player\\HUD\\PlayerButtons.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T15:51:32.81Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PlayerLife.cs",
-              "DocumentMoniker": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Player\\Script\\PlayerLife.cs",
-              "RelativeDocumentMoniker": "Assets\\Puli\\Player\\Script\\PlayerLife.cs",
-              "ToolTip": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Player\\Script\\PlayerLife.cs",
-              "RelativeToolTip": "Assets\\Puli\\Player\\Script\\PlayerLife.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T00:28:58.958Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "PlayerHealthBoard.cs",
               "DocumentMoniker": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Player\\Script\\PlayerHealthBoard.cs",
               "RelativeDocumentMoniker": "Assets\\Puli\\Player\\Script\\PlayerHealthBoard.cs",
@@ -145,7 +58,111 @@
               "RelativeToolTip": "Assets\\Puli\\Player\\Script\\PlayerHealthBoard.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T00:28:57.703Z",
+              "WhenOpened": "2025-06-19T21:36:17.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Bank.cs",
+              "DocumentMoniker": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Player\\HUD\\Bank.cs",
+              "RelativeDocumentMoniker": "Assets\\Puli\\Player\\HUD\\Bank.cs",
+              "ToolTip": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Player\\HUD\\Bank.cs",
+              "RelativeToolTip": "Assets\\Puli\\Player\\HUD\\Bank.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T21:36:13.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Enemigo.cs",
+              "DocumentMoniker": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Santiago\\ENEMIGO\\Enemigo.cs",
+              "RelativeDocumentMoniker": "Assets\\Santiago\\ENEMIGO\\Enemigo.cs",
+              "ToolTip": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Santiago\\ENEMIGO\\Enemigo.cs",
+              "RelativeToolTip": "Assets\\Santiago\\ENEMIGO\\Enemigo.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAgwIoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T20:55:29.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlayerMovement.cs",
+              "DocumentMoniker": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Player\\Script\\PlayerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Puli\\Player\\Script\\PlayerMovement.cs",
+              "ToolTip": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Player\\Script\\PlayerMovement.cs",
+              "RelativeToolTip": "Assets\\Puli\\Player\\Script\\PlayerMovement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T20:50:40.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CombatManager.cs",
+              "DocumentMoniker": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Santiago\\SISTEMAS\\CombatManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Santiago\\SISTEMAS\\CombatManager.cs",
+              "ToolTip": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Santiago\\SISTEMAS\\CombatManager.cs",
+              "RelativeToolTip": "Assets\\Santiago\\SISTEMAS\\CombatManager.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAowGwAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T20:42:27.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Testing.cs",
+              "DocumentMoniker": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Player\\Script\\Respawn System\\Testing.cs",
+              "RelativeDocumentMoniker": "Assets\\Puli\\Player\\Script\\Respawn System\\Testing.cs",
+              "ToolTip": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Player\\Script\\Respawn System\\Testing.cs",
+              "RelativeToolTip": "Assets\\Puli\\Player\\Script\\Respawn System\\Testing.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowDgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T20:40:21.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SaveSystem.cs",
+              "DocumentMoniker": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Santiago\\SISTEMAS\\SaveSystem.cs",
+              "RelativeDocumentMoniker": "Assets\\Santiago\\SISTEMAS\\SaveSystem.cs",
+              "ToolTip": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Santiago\\SISTEMAS\\SaveSystem.cs",
+              "RelativeToolTip": "Assets\\Santiago\\SISTEMAS\\SaveSystem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T20:41:02.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Santiago\\SISTEMAS\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Santiago\\SISTEMAS\\GameManager.cs",
+              "ToolTip": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Santiago\\SISTEMAS\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Santiago\\SISTEMAS\\GameManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T20:40:42.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BaseEnemy.cs",
+              "DocumentMoniker": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Enemies\\Scripts\\BaseEnemy.cs",
+              "RelativeDocumentMoniker": "Assets\\Puli\\Enemies\\Scripts\\BaseEnemy.cs",
+              "ToolTip": "D:\\Users\\Puli\\Documents\\Proyectos Unity\\Proyecto Final\\Assets\\Puli\\Enemies\\Scripts\\BaseEnemy.cs",
+              "RelativeToolTip": "Assets\\Puli\\Enemies\\Scripts\\BaseEnemy.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAmwEoAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T20:27:39.043Z",
               "EditorCaption": ""
             }
           ]

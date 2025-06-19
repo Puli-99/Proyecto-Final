@@ -4,5 +4,6 @@ public class GameData {
     public float playerY;
     public float playerZ;
     public int collectedItems;
+    public string sceneName;
 }
 
