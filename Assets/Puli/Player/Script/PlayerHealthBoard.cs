@@ -6,14 +6,20 @@ using UnityEngine;
 public class PlayerHealthBoard : MonoBehaviour, IObserver
 {
     //Logical Vars
-    int health = 100;
-    int defense = 100;
+    int health;
+    int defense;
 
     //Reference Vars
     [SerializeField] TMP_Text healthText;
     [SerializeField] TMP_Text defenseText;
+    [SerializeField] PlayerLife player;
 
 
+    void Start()
+    {
+        health = player.GetHealth();
+        defense = player.GetDefense();
+    }
 
     public void OnNotify(PlayerDataContainer amount)
     {

@@ -4,8 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class CombatManager : MonoBehaviour
+public class CombatManager : MonoBehaviour, IObserverEnemy
 {
+    public static CombatManager Instance { get; private set; }
+
     //Variables lógicas
     [SerializeField] PlayerButtons playerButtons; //Referencia para hacer daño. Se ejecuta en PlayerDealsDamage
     [SerializeField] PlayerLife playerLife; //Referencia del player para que el enemigo pueda hacerle daño
@@ -19,7 +21,7 @@ public class CombatManager : MonoBehaviour
 
 
     //Variables para cada enemigo cuando es seleccionado
-    [SerializeField] BaseEnemy selectedEnemy;
+    [SerializeField] public BaseEnemy selectedEnemy;
     [SerializeField] TMP_Text selectedEnemyHealthText;
     [SerializeField] TMP_Text selectedEnemyDamageText;
     [SerializeField] TMP_Text selectedEnemyDefenseText;
@@ -36,7 +38,10 @@ public class CombatManager : MonoBehaviour
 
 
 
-
+    void Awake()
+    {
+        Instance = this;
+    }
 
     // Define los posibles turnos en el combate
     private enum Turno { Player, Enemigo }
@@ -107,9 +112,19 @@ public class CombatManager : MonoBehaviour
         selectedEnemyDamageText.text = "Daño: " + enemy.GetDamage();
         selectedEnemyDefenseText.text = "Defensa: " + enemy.GetDefense();
     }
-    
-
-
+    public void OnNotify(BaseEnemy sourceEnemy, EnemyDataContainer amount)
+    {
+        if (amount.Type == EnemyDataContainer.NotificationType.TookDamage)
+        {
+            UpdateHUD(sourceEnemy);
+        }
+    }
+    void UpdateHUD(BaseEnemy enemy)
+    {
+        selectedEnemy = enemy;
+        selectedEnemyHealthText.text = "Vida: " + enemy.GetHealth();
+        selectedEnemyDefenseText.text = "Defensa: " + enemy.GetDefense();
+    }
     public void EjecutarAccionJugador() //Lo ejecuta cada botón del player
     {
         FinishCombat();

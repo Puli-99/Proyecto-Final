@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface IObserverEnemy
 {
-    void OnNotify(EnemyDataContainer typeOfValue);
+    void OnNotify(BaseEnemy sourceEnemy, EnemyDataContainer typeOfValue);
 }

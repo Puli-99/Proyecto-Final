@@ -27,7 +27,6 @@ public class PlayerButtons : MonoBehaviour
     public void Atack()
     {
         combatManager.PlayerDealsDamage();
-        Debug.Log("Daño: " + damage);
     }
 
     public void Items()

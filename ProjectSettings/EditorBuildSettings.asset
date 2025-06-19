@@ -10,13 +10,13 @@ EditorBuildSettings:
     guid: 728eab473d018f24da3c1a8f6f63fca5
   - enabled: 1
     path: Assets/Entregable/1_Hotel.unity
-    guid: 32f69ab43dd0f744689bdc074449c26a
+    guid: 3971cf168a8367b4cb3f687c08b14ade
   - enabled: 1
     path: Assets/Entregable/2_Street.unity
-    guid: d0a342cb99d7f754d8b1687942f46560
+    guid: bea503d0be752b746b85257cb3a51e44
   - enabled: 1
-    path: Assets/Entregable/3_Supermarket.unity
-    guid: 125b2f8f837ee764f8192332d0f9233b
+    path: Assets/Entregable/3_Supermercado.unity
+    guid: b08c2559533e0b94e92dcb8aabb6848e
   - enabled: 1
     path: Assets/Santiago/Escena/EscenaCombate.unity
     guid: aa6c1fe7705e2ae4e9cead556bc7bbae

@@ -9,7 +9,8 @@ public class PlayerLife : MonoBehaviour, IDamageable, IKillable
 
     int health;
     int defense;
-
+    public int GetHealth() => health;
+    public int GetDefense() => defense;
     private void Awake()
     {
         LoadPlayerData(); // Cargar valores al iniciar la escena

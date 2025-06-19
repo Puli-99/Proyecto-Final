@@ -17,12 +17,9 @@ public class BaseEnemy : MonoBehaviour, IDamageable, IKillable
     [SerializeField] protected int defense;
     [SerializeField] protected string enemyName;
     [SerializeField] protected string uniqueID;
-    [SerializeField] TMP_Text healthText;
-    [SerializeField] TMP_Text damageText;
-    [SerializeField] TMP_Text defenseText;
+
     [SerializeField] GameObject player;
     [SerializeField] GameObject EnemyStatsHUD;
-    [SerializeField] CombatManager combatManager;
 
 
     //Getters para el CombatManager
@@ -50,7 +47,7 @@ public class BaseEnemy : MonoBehaviour, IDamageable, IKillable
     {
         foreach (IObserverEnemy observer in observers)
         {
-            observer.OnNotify(typeOfValue);
+            observer.OnNotify(this, typeOfValue);
         }
     }
 
